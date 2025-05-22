@@ -15,7 +15,9 @@ export default function HomePage() {
       </section> */}
 
       {/* Slider principal */}
-      <SwiperSlider />
+      <section className="rounded-2xl shadow-lg shadow-black/30 max-w-screen-xl mx-auto mb-12">
+        <SwiperSlider />
+      </section>
       <AboutPreview />
       <MapGalleryPreview />
       <ClientsPreview />

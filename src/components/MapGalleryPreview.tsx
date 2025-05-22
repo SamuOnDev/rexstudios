@@ -47,17 +47,17 @@ const maps = [
 
 export default function MapGalleryPreview() {
     return (
-        <section className="max-w-screen-xl mx-auto px-6 py-16 text-center">
+        <section className="max-w-screen-xl mx-auto px-6 py-16 text-center ">
         <h2 className="text-3xl md:text-4xl font-heading text-text mb-10">
             Featured Maps
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 ">
             {maps.map((map) => (
             <a
             href={map.link}
             key={map.id}
-            className="relative group rounded-2xl overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105"
+            className="relative group rounded-2xl overflow-hidden shadow-lg shadow-black/40 transform transition-all duration-300 hover:scale-105"
             >
             <Image
                 src={map.image}

@@ -1,6 +1,6 @@
 export default function ContactPreview() {
     return (
-        <section className="bg-surfaceAlt px-6 py-16 rounded-2xl shadow max-w-screen-xl mx-auto mb-12 text-center">
+        <section className="bg-surfaceAlt px-6 py-16 rounded-2xl shadow-lg shadow-black/20 max-w-screen-xl mx-auto mb-12 text-center">
         <h2 className="text-3xl md:text-4xl font-heading text-text mb-4">
             Get in touch
         </h2>
