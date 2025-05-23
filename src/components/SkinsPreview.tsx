@@ -1,4 +1,5 @@
 import Image from "next/image";
+import RexButton from "@/components/RexButton";
 
 const skins = [
         { name: "Knight Skin", image: "/images/skins/skin001.png" },
@@ -30,13 +31,7 @@ export default function SkinsPreview() {
                 </div>
                 ))}
             </div>
-
-            <a
-                href="/skins"
-                className="inline-block px-6 py-3 rounded-full font-medium text-white transition-all duration-300 border-2 border-transparent bg-secondary hover:bg-secondaryDark bg-opacity-90 hover:shadow-xl hover:border-green-400"
-            >
-                View all skins
-            </a>
+            <RexButton href="/skins">View all skins</RexButton>
         </section>
     );
 }

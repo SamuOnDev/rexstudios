@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-// import Image from "next/image"; // Comentado por ahora
+import Image from "next/image";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,54 +16,64 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-full z-50 overflow-hidden transition-all duration-300 ease-in-out ${
         scrolled ? "h-16 shadow-md bg-white/90 backdrop-blur" : "h-60 bg-base"
       }`}
     >
-      <div className="relative w-full h-full flex flex-col justify-center transition-all duration-300 ease-in-out">
-        {/* 
-        {!scrolled && (
-          <Image
-            src="/images/banner.jpg"
-            alt="Banner"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0 z-0 brightness-110 opacity-60"
-          />
-        )}
-        */}
+      {/* Imagen decorativa como suelo del header */}
+      <div
+        className={`absolute bottom-0 left-0 w-full bg-[url('/images/header-strip.png')] bg-repeat-x bg-bottom bg-contain h-[50px] md:h-[70px] sm:h-[20px] pointer-events-none z-0 transition-all duration-300 ${
+          scrolled ? "translate-y-[40px] md:translate-y-[55px]" : "translate-y-0"
+        }`}
+      ></div>
 
+      {/* Contenido del header */}
+      <div
+        className={`relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:justify-between h-full transition-all duration-300 ${
+          scrolled ? "gap-y-1" : "gap-y-4"
+        }`}
+      >
+        {/* Logo + Nombre + Lema */}
         <div
-          className={`relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between w-full h-full transition-all duration-300 ${
-            scrolled ? "py-0" : "py-8"
-          }`}
+          className={`flex ${
+            scrolled ? "flex-row items-center" : "flex-col items-center"
+          } md:flex-row md:items-center gap-x-1 text-center md:text-left`}
         >
-          <div className={`text-text text-center md:text-left ${!scrolled ? "mt-4" : ""}`}>
-            <div
-              className={`font-heading font-bold transition-all duration-300 ${
-                scrolled ? "text-lg" : "text-4xl md:text-5xl"
-              }`}
-            >
-              <Link href="/">RexStudios</Link>
-            </div>
+          <Image
+            src="/images/rex-logo.png"
+            alt="Logo"
+            width={scrolled ? 32 : 80}
+            height={scrolled ? 32 : 80}
+            className="object-contain transition-all duration-300"
+            priority
+          />
+          <div
+            className={`font-heading font-bold transition-all duration-300 ${
+              scrolled ? "text-lg" : "text-3xl"
+            } text-text`}
+          >
+            <Link href="/">RexStudios</Link>
             {!scrolled && (
               <div className="text-sm text-text/60 leading-tight mt-1">
                 Creative Minecraft Builds & Collaboration
               </div>
             )}
           </div>
-
-          <nav
-            className={`mt-4 md:mt-0 space-x-6 font-medium text-text transition-all ${
-              scrolled ? "text-sm" : "text-base"
-            }`}
-          >
-            <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
-            <Link href="/about" className="hover:text-secondary transition-colors">About</Link>
-            <Link href="/clients" className="hover:text-secondary transition-colors">Clients</Link>
-            <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
-          </nav>
         </div>
+
+        {/* Menú responsive */}
+        <nav
+          className={`${
+            scrolled ? "mt-0" : "mt-3"
+          } md:mt-0 space-x-4 md:space-x-6 font-medium text-text transition-all ${
+            scrolled ? "text-sm" : "text-base"
+          }`}
+        >
+          <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
+          <Link href="/about" className="hover:text-secondary transition-colors">About</Link>
+          <Link href="/clients" className="hover:text-secondary transition-colors">Clients</Link>
+          <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
+        </nav>
       </div>
     </header>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import RexButton from "@/components/RexButton";
 
 const maps = [
     {
@@ -75,7 +76,7 @@ export default function MapGalleryPreview() {
             </div>
 
             {/* Nombre del mapa siempre visible abajo */}
-            <div className="absolute bottom-0 left-0 right-0 bg-black/30 px-4 py-2">
+            <div className="absolute bottom-0 left-0 right-0 bg-black/50 px-4 py-2">
                 <h3 className="text-white text-lg font-semibold">
                 {map.name}
                 </h3>
@@ -84,12 +85,7 @@ export default function MapGalleryPreview() {
             ))}
         </div>
 
-        <a
-        href="/maps"
-        className="inline-block px-6 py-3 rounded-full font-medium text-white transition-all duration-300 border-2 border-transparent bg-secondary hover:bg-secondaryDark bg-opacity-90 hover:shadow-xl hover:border-green-400"
-        >
-        View all maps
-        </a>
+        <RexButton href="/maps">View all maps</RexButton>
         </section>
     );
 }
