@@ -24,13 +24,10 @@ const models = [
     },
 ];
 
-export default function ModelsPreview() {
+export function ModelsPreview() {
     return (
-        <section className="bg-surfaceAlt px-6 py-16 rounded-2xl shadow-lg shadow-black/20 max-w-screen-xl mx-auto mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-heading text-text mb-10">
-            Featured Models
-        </h2>
-
+        <section className="px-4 sm:px-6 md:px-8 py-10 sm:py-16 max-w-screen-xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6">Custom Models</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
             {models.map((model, index) => (
             <div

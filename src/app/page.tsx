@@ -1,46 +1,49 @@
 import SwiperSlider from "@/components/SwiperSlider";
-import AboutPreview from "@/components/AboutPreview";
-import MapGalleryPreview from "@/components/MapGalleryPreview";
-import ClientsPreview from "@/components/ClientsPreview";
-import ContactPreview from "@/components/ContactPreview";
-import SkinsPreview from "@/components/SkinsPreview";
-import ModelsPreview from "@/components/ModelsPreview";
+import { AboutPreview } from "@/components/AboutPreview";
+import { MapGalleryPreview } from "@/components/MapGalleryPreview";
+import { ClientsPreview } from "@/components/ClientsPreview";
+import { SkinsPreview } from "@/components/SkinsPreview";
+import { ModelsPreview } from "@/components/ModelsPreview";
+import { ContactPreview } from "@/components/ContactPreview";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen px-6 py-8">
-      {/* <section className="mb-16">
-        <h1 className="text-4xl font-heading font-semibold mb-4">Welcome to RexStudios</h1>
-        <p className="text-lg text-text/70">Explore our Minecraft maps and creative projects.</p>
-      </section> */}
+    <main className="min-h-screen px-4 sm:px-6 md:px-8 py-6 sm:py-8 lg:py-12">
 
       {/* Slider principal */}
-      <section className="rounded-2xl shadow-lg shadow-black/30 max-w-screen-xl mx-auto mb-12">
+      <section className="rounded-2xl shadow-lg shadow-black/30 max-w-screen-xl mx-auto mb-16 lg:mb-28" aria-label="Main slider">
         <SwiperSlider />
       </section>
-      <AboutPreview />
-      <MapGalleryPreview />
-      <ClientsPreview />
-      <SkinsPreview />
-      <ModelsPreview />
-      <ContactPreview />
 
-      {/* Muestrario de colores */}
-      {/* <section className="bg-surface p-6 rounded-2xl shadow mb-12">
-        <h2 className="text-2xl font-heading mb-4">Color Palette</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          <div className="rounded-xl h-24 bg-secondary" />
-          <div className="rounded-xl h-24 bg-blueAccent" />
-          <div className="rounded-xl h-24 bg-purpleAccent" />
-        </div>
+      {/* About section */}
+      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="About section">
+        <AboutPreview />
+      </section>
 
-        <h2 className="text-2xl font-heading mb-4">Gradient Variants</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="rounded-xl h-24 bg-gradient-to-br from-secondary to-secondaryDark" />
-          <div className="rounded-xl h-24 bg-gradient-to-br from-blueAccent to-blueAccentDark" />
-          <div className="rounded-xl h-24 bg-gradient-to-br from-purpleAccent to-purpleAccentDark" />
-        </div>
-      </section> */}
+      {/* Map Gallery section */}
+      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Map gallery section">
+        <MapGalleryPreview />
+      </section>
+
+      {/* Clients section */}
+      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Clients section">
+        <ClientsPreview />
+      </section>
+
+      {/* Skins section */}
+      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Skins section">
+        <SkinsPreview />
+      </section>
+
+      {/* Models section */}
+      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Models section">
+        <ModelsPreview />
+      </section>
+
+      {/* Contact section */}
+      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Contact section">
+        <ContactPreview />
+      </section>
     </main>
   );
 }

@@ -8,13 +8,10 @@ const clients = [
     { name: "YT Creator 5", avatar: "/images/creators/creator5.png" },
 ];
 
-    export default function ClientsPreview() {
+export function ClientsPreview() {
     return (
-        <section className="bg-surfaceAlt px-6 py-16 rounded-2xl shadow-lg shadow-black/20 max-w-screen-xl mx-auto mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-heading text-text mb-10">
-                Our Collaborators
-            </h2>
-
+        <section className="px-4 sm:px-6 md:px-8 py-10 sm:py-16 max-w-screen-xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6">Our Clients</h2>
             <div className="flex flex-wrap justify-center gap-10 mb-8">
                 {clients.map((client) => (
                 <div
