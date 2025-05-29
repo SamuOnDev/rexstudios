@@ -1,0 +1,15 @@
+{
+    "Header": {
+        "home": "Home",
+        "about": "About",
+        "clients": "Clients",
+        "contact": "Contact"
+    },
+    "Footer": {
+        "rights": "© 2025 RexStudios. All rights reserved."
+    },
+    "HomePage": {
+        "title": "Welcome to RexStudios",
+        "description": "We build immersive Minecraft experiences."
+    }
+}

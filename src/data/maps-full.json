@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Crystal World",
+        "image": "/images/maps/map1.png",
+        "link": "/maps/map1",
+        "description": "Explore dazzling crystals and underground ruins in this fantasy map."
+    },
+    {
+        "id": 2,
+        "name": "Desert Raid",
+        "image": "/images/maps/map2.png",
+        "link": "/maps/map2",
+        "description": "Venture into ancient tombs and fight bandits in the desert."
+    },
+    {
+        "id": 3,
+        "name": "Sky Islands",
+        "image": "/images/maps/map3.png",
+        "link": "/maps/map3",
+        "description": "Jump between floating islands and discover hidden treasures."
+    },
+    {
+        "id": 4,
+        "name": "Jungle Escape",
+        "image": "/images/maps/map4.png",
+        "link": "/maps/map4",
+        "description": "Navigate dense jungle terrain full of secrets and dangers."
+    },
+    {
+        "id": 5,
+        "name": "Frozen Depths",
+        "image": "/images/maps/map5.png",
+        "link": "/maps/map5",
+        "description": "Delve into icy caves and uncover lost civilizations."
+    },
+    {
+        "id": 6,
+        "name": "Inferno Citadel",
+        "image": "/images/maps/map6.png",
+        "link": "/maps/map6",
+        "description": "Face the fiery guardians of a forgotten fortress."
+    }
+]

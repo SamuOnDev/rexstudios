@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Knight Skin",
+    "image": "/images/skins/skin001.png"
+  },
+  {
+    "name": "Mage Skin",
+    "image": "/images/skins/skin002.png"
+  },
+  {
+    "name": "Rogue Skin",
+    "image": "/images/skins/skin003.png"
+  },
+  {
+    "name": "Paladin Skin",
+    "image": "/images/skins/skin004.png"
+  }
+]
