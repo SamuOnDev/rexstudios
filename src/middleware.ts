@@ -14,5 +14,6 @@ export function middleware(request: NextRequest) {
 
 /* 3.  Limita las rutas en las que se aplica */
 export const config = {
-  matcher: ['/', '/(en|es)/:path*']  // sincronízalo con los locales de arriba
-};
+  matcher: ['/((?!_next|images|favicon.ico|assets|.*\\..*).*)']
+}
+

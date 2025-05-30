@@ -9,6 +9,8 @@ import { SkinsPreview } from "@/components/SkinsPreview";
 import { ModelsPreview } from "@/components/ModelsPreview";
 import { ContactPreview } from "@/components/ContactPreview";
 
+import Reveal from '@/components/shared/Reveal'
+
 export default function HomePage() {
   const t = useTranslations('HomePage');
 
@@ -23,29 +25,39 @@ export default function HomePage() {
         <SwiperSlider />
       </section>
 
-      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="About section">
-        <AboutPreview />
-      </section>
+      <Reveal>
+        <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="About section">
+          <AboutPreview />
+        </section>
+      </Reveal>
 
       <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Map gallery section">
         <MapGalleryPreview />
       </section>
 
-      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Clients section">
-        <ClientsPreview />
-      </section>
+      <Reveal>
+        <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Clients section">
+          <ClientsPreview />
+        </section>
+      </Reveal>
 
-      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Skins section">
-        <SkinsPreview />
-      </section>
+      <Reveal>
+        <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Skins section">
+          <SkinsPreview />
+        </section>
+      </Reveal>
 
-      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Models section">
-        <ModelsPreview />
-      </section>
+      <Reveal>
+        <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Models section">
+          <ModelsPreview />
+        </section>
+      </Reveal>
 
-      <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Contact section">
-        <ContactPreview />
-      </section>
+      <Reveal>
+        <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Contact section">
+          <ContactPreview />
+        </section>
+      </Reveal>
     </main>
   );
 }

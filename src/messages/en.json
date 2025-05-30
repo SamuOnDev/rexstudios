@@ -11,5 +11,11 @@
     "HomePage": {
         "title": "Welcome to RexStudios",
         "description": "We build immersive Minecraft experiences."
+    },
+    "AboutPage": {
+        "title": "About RexStudios",
+        "description1": "RexStudios is a creative collective focused on building immersive and customized Minecraft maps for content creators, brands and gaming communities. We believe in quality, creativity and the power of collaboration.",
+        "description2": "Since our founding, we’ve worked with notable creators to deliver high-quality, playable experiences that inspire imagination and storytelling in Minecraft.",
+        "foundersTitle": "Our Founders"
     }
 }
