@@ -4,7 +4,7 @@
             "en": "Crystal World"
         },
         "slug": "crystal-world",
-        "image": "/images/maps/map1.png",
+        "image": "/images/maps/map1/map1-1.png",
         "description": {
             "en": "Explore dazzling crystals and ruins."
         },
@@ -25,7 +25,7 @@
             "en": "Desert Raid"
         },
         "slug": "desert-raid",
-        "image": "/images/maps/map2.png",
+        "image": "/images/maps/map2/map2-1.png",
         "description": {
             "en": "Fight bandits in the desert tombs."
         },
@@ -46,7 +46,7 @@
             "en": "Sky Islands"
         },
         "slug": "sky-islands",
-        "image": "/images/maps/map3.png",
+        "image": "/images/maps/map3/map3-1.png",
         "description": {
             "en": "Jump between floating islands."
         },
@@ -69,7 +69,7 @@
             "en": "Jungle Escape"
         },
         "slug": "jungle-escape",
-        "image": "/images/maps/map4.png",
+        "image": "/images/maps/map4/map4-1.png",
         "description": {
             "en": "Survive in the jungle."
         },
