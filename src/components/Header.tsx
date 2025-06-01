@@ -2,9 +2,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const t = useTranslations("Header");
 
   useEffect(() => {
     const onScroll = () => {
@@ -55,24 +57,21 @@ export default function Header() {
             <Link href="/">RexStudios</Link>
             {!scrolled && (
               <div className="text-sm text-text/60 leading-tight mt-1">
-                Creative Minecraft Builds & Collaboration
+                {t("tagline")}
               </div>
             )}
           </div>
         </div>
 
-        {/* Menú responsive */}
-        <nav
-          className={`${
-            scrolled ? "mt-0" : "mt-3"
-          } md:mt-0 space-x-4 md:space-x-6 font-medium text-text transition-all ${
-            scrolled ? "text-sm" : "text-base"
-          }`}
-        >
-          <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
-          <Link href="/about" className="hover:text-secondary transition-colors">About</Link>
-          <Link href="/clients" className="hover:text-secondary transition-colors">Clients</Link>
-          <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
+        {/* Navegación */}
+        <nav className="flex flex-wrap justify-center gap-6 text-text font-medium">
+          <Link href="/" className="block">{t("home")}</Link>
+          <Link href="/maps" className="hidden md:block">{t("maps")}</Link>
+          <Link href="/skins" className="hidden md:block">{t("skins")}</Link>
+          <Link href="/models" className="hidden md:block">{t("models")}</Link>
+          <Link href="/about" className="block">{t("about")}</Link>
+          <Link href="/clients" className="block">{t("clients")}</Link>
+          <Link href="/contact" className="block">{t("contact")}</Link>
         </nav>
       </div>
     </header>

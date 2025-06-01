@@ -1,6 +1,10 @@
 {
     "Header": {
+        "tagline": "Creative Minecraft Builds & Collaboration",
         "home": "Home",
+        "maps": "Maps",
+        "skins": "Skins",
+        "models": "Models",
         "about": "About",
         "clients": "Clients",
         "contact": "Contact"
@@ -17,5 +21,49 @@
         "description1": "RexStudios is a creative collective focused on building immersive and customized Minecraft maps for content creators, brands and gaming communities. We believe in quality, creativity and the power of collaboration.",
         "description2": "Since our founding, we’ve worked with notable creators to deliver high-quality, playable experiences that inspire imagination and storytelling in Minecraft.",
         "foundersTitle": "Our Founders"
+    },
+    "ClientsPage": {
+        "title": "Who we've worked with"
+    },
+    "ModelsPage": {
+        "title": "Our Models"
+    },
+    "SkinsPage": {
+        "title": "Character Skins"
+    },
+    "MapsPage": {
+        "title": "Our Maps"
+    },
+    "MapDetailPage": {
+        "title": "Map Detail",
+        "ctaGetNow": "Get now",
+        "back": "Back"
+    },
+    "ContactPage": {
+        "title": "Contact Us",
+        "name": "Name",
+        "email": "Email",
+        "discord": "Discord username",
+        "portfolio": "Portfolio / URL (optional)",
+        "message": "Message",
+        "submit": "Send Message"
+    },
+    "PrivacyPage": {
+        "title": "Privacy Policy",
+        "intro": "We value your privacy and want you to understand how your information is handled.",
+        "dataUsage": "We collect only the data necessary to provide our services. No sensitive data is stored.",
+        "thirdParty": "We do not share your information with third parties except for basic analytics.",
+        "contact": "For any questions about your privacy, feel free to contact us."
+    },
+    "TermsPage": {
+        "title": "Terms & Conditions",
+        "intro1": "These terms and conditions outline the rules and regulations for the use of RexStudios website and services.",
+        "intro2": "By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use RexStudios if you do not accept all of the terms and conditions stated on this page.",
+        "definitions": "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: 'Client', 'You' and 'Your' refers to you, the person accessing this website and accepting the Company’s terms and conditions. 'The Company', 'Ourselves', 'We', 'Our' and 'Us', refers to our Company.",
+        "changes": "We reserve the right to revise these terms at any time. By using this site, you are agreeing to be bound by the then-current version of these Terms and Conditions.",
+        "contact": "For any concerns or inquiries regarding our terms, feel free to contact us through the provided contact channels."
     }
+
+
+
 }

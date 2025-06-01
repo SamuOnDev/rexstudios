@@ -1,9 +1,10 @@
 [
-    { "name": "YT Creator 1", "avatar": "/images/creators/creator1.png" },
-    { "name": "YT Creator 2", "avatar": "/images/creators/creator2.png" },
-    { "name": "YT Creator 3", "avatar": "/images/creators/creator3.png" },
-    { "name": "YT Creator 4", "avatar": "/images/creators/creator4.png" },
-    { "name": "YT Creator 5", "avatar": "/images/creators/creator5.png" },
-    { "name": "YT Creator 6", "avatar": "/images/creators/creator6.png" },
-    { "name": "YT Creator 7", "avatar": "/images/creators/creator7.png" }
+    { "name": "Willyrex", "avatar": "/images/creators/willyrex_minecraft.png", "url": "https://www.youtube.com/@WillyrexMinecraft" },
+    { "name": "YT Creator 2", "avatar": "/images/creators/creator1.png", "url": "https://youtube.com/creator2" },
+    { "name": "YT Creator 3", "avatar": "/images/creators/creator3.png", "url": "https://youtube.com/creator3" },
+    { "name": "YT Creator 4", "avatar": "/images/creators/creator4.png", "url": "https://youtube.com/creator4" },
+    { "name": "YT Creator 5", "avatar": "/images/creators/creator5.png", "url": "https://youtube.com/creator5" },
+    { "name": "YT Creator 6", "avatar": "/images/creators/creator6.png", "url": "https://youtube.com/creator6" },
+    { "name": "YT Creator 7", "avatar": "/images/creators/creator7.png", "url": "https://youtube.com/creator7" },
+    { "name": "YT Creator 8", "avatar": "/images/creators/creator8.png", "url": "https://youtube.com/creator8" }
 ]
