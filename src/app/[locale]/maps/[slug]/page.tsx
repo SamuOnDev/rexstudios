@@ -4,13 +4,14 @@ import MapDetailSlider from "@/components/MapDetailSlider";
 import RexButton from "@/components/RexButton";
 import maps from "@/data/maps-full.json";
 
-interface Props {
-    params: { slug: string; locale: string };
+interface PageProps {
+    params: {
+        slug: string;
+        locale: string;
+    };
 }
 
-export default async function Page({ params }: Props) {
-    const { slug, locale } = await Promise.resolve(params); // esto es lo que espera Next.js en rutas dinámicas
-
+export default async function Page({ params: { slug, locale } }: PageProps) {
     const t = await getTranslations({ locale });
 
     const map = maps.find((m) => m.slug === slug);
@@ -62,10 +63,9 @@ export default async function Page({ params }: Props) {
                 </div>
             )}
 
-            {/* Botón "Back" añadido al final de la página */}
             <div className="text-center text-xl mt-10">
                 <RexButton href={`/${locale}/maps`}>
-                {t("MapDetailPage.back")}
+                    {t("MapDetailPage.back")}
                 </RexButton>
             </div>
         </main>
