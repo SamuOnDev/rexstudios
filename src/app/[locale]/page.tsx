@@ -30,7 +30,7 @@ export default function HomePage() {
           <AboutPreview />
         </section>
       </Reveal>
-
+      
       <section className="max-w-screen-xl mx-auto mb-12 md:mb-20" aria-label="Map gallery section">
         <MapGalleryPreview />
       </section>
