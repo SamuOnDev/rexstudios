@@ -5,11 +5,11 @@ import RexButton from "@/components/RexButton";
 import maps from "@/data/maps-full.json";
 
 export default async function Page({
-    params,
+        params,
     }: {
-    params: { slug: string; locale: string };
+        params: Promise<{ slug: string; locale: string }>;
     }) {
-    const { slug, locale } = params;
+    const { slug, locale } = await params;
     const t = await getTranslations({ locale });
 
     const map = maps.find((m) => m.slug === slug);
