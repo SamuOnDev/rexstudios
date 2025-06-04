@@ -78,6 +78,10 @@ export default function MapDetailSlider({ images }: MapDetailSliderProps) {
                         height: 4rem;
                         width: 2rem;
                         padding: 0.25rem 0.5rem;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto 0;
+                        transform: none;
                     }
 
                     .swiper-button-prev::after,

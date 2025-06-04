@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { getTranslations } from "next-intl/server"
 import Reveal from "@/components/shared/Reveal"
-import models from "@/data/models-full.json"
+import models from "@/data/models.json"
 import Link from "next/link"
 
 export default async function ModelsPage() {
@@ -36,11 +36,6 @@ export default async function ModelsPage() {
                             <div className="absolute inset-0 bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-base px-6 text-center z-20 rounded-2xl">
                                 {model.description}
                             </div>
-                        </div>
-
-                        
-                        <div className="absolute inset-0 bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-base px-6 text-center z-20">
-                            {model.description}
                         </div>
                     </Link>
                 </Reveal>

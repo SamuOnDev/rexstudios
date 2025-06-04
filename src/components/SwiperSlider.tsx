@@ -63,6 +63,29 @@ export default function SwiperSlider() {
                     box-sizing: border-box;
                 }
 
+                .swiper-button-prev::after,
+                .swiper-button-next::after {
+                    font-size: 2.25rem;
+                }
+
+                @media (max-width: 768px) {
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        height: 4rem;
+                        width: 2rem;
+                        padding: 0.25rem 0.5rem;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto 0;
+                        transform: none;
+                    }
+
+                    .swiper-button-prev::after,
+                    .swiper-button-next::after {
+                        font-size: 1.5rem;
+                    }
+                }
+
                 .swiper-button-prev:hover,
                 .swiper-button-next:hover {
                     background-color: rgba(50, 120, 80, 0.85);

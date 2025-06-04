@@ -2,11 +2,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const t = useTranslations("Header");
+  const locale = useLocale();
 
   useEffect(() => {
     const onScroll = () => {
@@ -54,7 +55,7 @@ export default function Header() {
               scrolled ? "text-lg" : "text-3xl"
             } text-text`}
           >
-            <Link href="/">RexStudios</Link>
+            <Link href={`/${locale}`}>RexStudios</Link>
             {!scrolled && (
               <div className="text-sm text-text/60 leading-tight mt-1">
                 {t("tagline")}
@@ -65,13 +66,13 @@ export default function Header() {
 
         {/* Navegación */}
         <nav className="flex flex-wrap justify-center gap-6 text-text font-medium">
-          <Link href="/" className="block">{t("home")}</Link>
-          <Link href="/maps" className="hidden md:block">{t("maps")}</Link>
-          <Link href="/skins" className="hidden md:block">{t("skins")}</Link>
-          <Link href="/models" className="hidden md:block">{t("models")}</Link>
-          <Link href="/about" className="block">{t("about")}</Link>
-          <Link href="/clients" className="block">{t("clients")}</Link>
-          <Link href="/contact" className="block">{t("contact")}</Link>
+          <Link href={`/${locale}`} className="block">{t("home")}</Link>
+          <Link href={`/${locale}/maps`} className="hidden md:block">{t("maps")}</Link>
+          <Link href={`/${locale}/skins`} className="hidden md:block">{t("skins")}</Link>
+          <Link href={`/${locale}/models`} className="hidden md:block">{t("models")}</Link>
+          <Link href={`/${locale}/about`} className="block">{t("about")}</Link>
+          <Link href={`/${locale}/clients`} className="block">{t("clients")}</Link>
+          <Link href={`/${locale}/contact`} className="block">{t("contact")}</Link>
         </nav>
       </div>
     </header>

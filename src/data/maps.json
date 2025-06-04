@@ -3,19 +3,24 @@
         "name": {
             "en": "Willyrex Parkour"
         },
-        "slug": "crystal-world",
-        "image": "/images/maps/map1/map1-1.png",
+        "slug": "willyrex-parkour",
+        "image": "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrexThumbnail.png",
         "description": {
-            "en": "Explore dazzling crystals and ruins."
+            "en": "Climb Willyrex’s Parkour Tower and prove, jump by jump, your true skill."
         },
         "longDescription": {
-            "en": "Explore dazzling crystals, deep underground caverns, and magical ruins in this fantasy adventure map perfect for roleplay and exploration."
+            "en":   "Before you rises a tower that seems to stretch endlessly upward, distilling both the pressure and the reward of parkour.\nIts design plays with pure verticality: every block dares you to risk, every brief pause seeds doubt.\nThere are no distractions—just open air around you and the certainty that one misstep sends you back to the start.\nSections shift pace without warning, forcing you to recalibrate reflexes and timing on the fly.\nDifficulty grows subtly yet relentlessly, turning the climb into a battle against your own patience.\nFans of Willyrex will sense echoes of his competitive spirit, though the map never reveals all its secrets.\nThose who reach the summit claim a victory that speaks more about the player than about the game."
         },
         "youtube": "dQw4w9WgXcQ",
         "slider": [
-        "/images/maps/map1/map1-1.png",
-        "/images/maps/map1/map1-2.png",
-        "/images/maps/map1/map1-3.png"
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrexThumbnail.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex01.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex02.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex03.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex04.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex05.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex06.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex07.png"
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true

@@ -27,7 +27,7 @@ export default function MapsPage() {
                         return (
                             <Reveal key={index} delay={index * 0.1}>
                                 <Link
-                                    href={`/maps/${map.slug}`}
+                                    href={`/${locale}/maps/${map.slug}`}
                                     className="group overflow-hidden rounded-2xl shadow-card transition-transform duration-300 hover:scale-105 block"
                                 >
                                     <div className="relative w-full aspect-[16/9]">
