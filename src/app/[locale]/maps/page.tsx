@@ -23,7 +23,6 @@ export default function MapsPage() {
                         const name = typeof map.name === "string" ? map.name : (map.name as Record<string, string>)[locale] || map.name["en"];
                         const description = typeof map.description === "string" ? map.description : (map.description as Record<string, string>)[locale] || map.description["en"];
 
-
                         return (
                             <Reveal key={index} delay={index * 0.1}>
                                 <Link
