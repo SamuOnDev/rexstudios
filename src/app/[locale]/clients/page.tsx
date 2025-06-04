@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { getTranslations } from "next-intl/server"
 import Reveal from "@/components/shared/Reveal"
-import clients from "@/data/clients-full.json"
+import clients from "@/data/clients.json"
 
 export default async function ClientsPage() {
     const t = await getTranslations("ClientsPage")

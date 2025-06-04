@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { getTranslations } from "next-intl/server"
 import Reveal from "@/components/shared/Reveal"
-import skins from "@/data/skins-full.json"
+import skins from "@/data/skins.json"
 import Link from "next/link"
 
 export default async function SkinsPage() {

@@ -4,7 +4,7 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import Reveal from "@/components/shared/Reveal";
-import maps from "@/data/maps-full.json";
+import maps from "@/data/maps.json";
 import Link from "next/link";
 
 export default function MapsPage() {

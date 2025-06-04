@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import MapDetailSlider from "@/components/MapDetailSlider";
 import RexButton from "@/components/RexButton";
-import maps from "@/data/maps-full.json";
+import maps from "@/data/maps.json";
 
 export default async function Page({
         params,

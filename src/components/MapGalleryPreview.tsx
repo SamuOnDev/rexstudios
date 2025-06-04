@@ -2,7 +2,7 @@ import Image from "next/image";
 import RexButton from "@/components/RexButton";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import maps from "@/data/maps-full.json";
+import maps from "@/data/maps.json";
 
 const featuredMaps = maps.filter((map) => map.featured && map.image);
 
