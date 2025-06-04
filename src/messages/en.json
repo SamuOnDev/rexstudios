@@ -50,20 +50,128 @@
     },
     "PrivacyPage": {
         "title": "Privacy Policy",
-        "intro": "We value your privacy and want you to understand how your information is handled.",
-        "dataUsage": "We collect only the data necessary to provide our services. No sensitive data is stored.",
-        "thirdParty": "We do not share your information with third parties except for basic analytics.",
-        "contact": "For any questions about your privacy, feel free to contact us."
+        "intro": "We value your privacy and want you to understand how your information is handled. This Policy (last updated 3 June 2025) explains what data we collect, why we collect it and how you can exercise your rights.",
+        "dataUsage": "RexStudios collects only the personal data needed to operate the platform and to keep your account secure. Details are set out in the sections below; no sensitive data is stored unless you choose to provide it.",
+        "thirdParty": "We never sell your information. Data are shared only with service providers strictly necessary for hosting and analytics, each bound by adequate contractual safeguards and—where applicable—EU Standard Contractual Clauses.",
+        "contact": "For any questions about this Policy or the processing of your personal data, e-mail us at [contact email].",
+
+        "sections": [
+            {
+                "heading": "1. Controller",
+                "body": "The controller is the independent developer team behind RexStudios (\"we\" or \"us\"). You can reach us at [contact email]."
+            },
+            {
+                "heading": "2. Personal Data We Collect",
+                "body": "• Registration data – name, e-mail and encrypted password.\n• Optional profile data – avatar and biography.\n• Usage data – IP address, access logs and in-platform events.\n• Cookies and similar technologies – device identifiers and preferences."
+            },
+            {
+                "heading": "3. Purposes and Legal Bases (Art. 6 GDPR)",
+                "body": "a) Service provision and account management – performance of the contract.\nb) Analytics and platform improvement – legitimate interest.\nc) Fraud prevention and security – legal obligation and legitimate interest.\nd) Commercial newsletters – consent."
+            },
+            {
+                "heading": "4. Recipients",
+                "body": "Data may be processed by our EU-based hosting provider, privacy-friendly analytics services with IP anonymisation, and—where legally required—public authorities or courts."
+            },
+            {
+                "heading": "5. International Transfers",
+                "body": "We transfer data outside the EEA only if the recipient offers adequate safeguards, such as an EU adequacy decision or Standard Contractual Clauses."
+            },
+            {
+                "heading": "6. Retention Periods",
+                "body": "• User accounts – for the lifetime of the account and up to five years after closure to address potential liabilities.\n• Security logs – 12 months.\n• Marketing consents – until you withdraw consent."
+            },
+            {
+                "heading": "7. Your Rights",
+                "body": "You may request access, rectification, erasure, restriction, portability or objection by writing to [contact email] and providing proof of identity. You also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+            },
+            {
+                "heading": "8. Information Security",
+                "body": "We apply TLS encryption, salted-hash passwords, encrypted backups and strict access controls to safeguard confidentiality and integrity."
+            },
+            {
+                "heading": "9. Cookies",
+                "body": "We use essential cookies plus analytics cookies subject to your consent. Non-essential cookies can be configured or refused via the consent banner."
+            },
+            {
+                "heading": "10. Minors",
+                "body": "The Platform is not directed to children under 14. If we learn that personal data of a minor have been collected, we will delete them without delay."
+            },
+            {
+                "heading": "11. Changes to This Policy",
+                "body": "We may update this Policy; significant changes will be announced 15 days in advance via an on-site notice or e-mail."
+            },
+            {
+                "heading": "12. Contact",
+                "body": "If you have any privacy-related queries, write to [contact email] with the subject line “Data Protection”."
+            }
+        ]
     },
     "TermsPage": {
         "title": "Terms & Conditions",
-        "intro1": "These terms and conditions outline the rules and regulations for the use of RexStudios website and services.",
-        "intro2": "By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use RexStudios if you do not accept all of the terms and conditions stated on this page.",
-        "definitions": "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: 'Client', 'You' and 'Your' refers to you, the person accessing this website and accepting the Company’s terms and conditions. 'The Company', 'Ourselves', 'We', 'Our' and 'Us', refers to our Company.",
-        "changes": "We reserve the right to revise these terms at any time. By using this site, you are agreeing to be bound by the then-current version of these Terms and Conditions.",
-        "contact": "For any concerns or inquiries regarding our terms, feel free to contact us through the provided contact channels."
+        "intro1": "These Terms and Conditions of Use (the \"Terms\"), last updated 3 June 2025, govern access to and use of RexStudios, an independent platform that showcases maps, skin packs and NPC models for the Minecraft videogame (the \"Content\").",
+        "intro2": "By accessing or using the Platform you become a user (\"User\") and accept these Terms in full and without reservation. The service is available only to natural persons aged 14 years or older who have legal capacity to contract; by registering you confirm that you meet this requirement and that all information you provide is accurate.",
+        "definitions": "\"Platform\" or \"RexStudios\" refers to the website operated by an independent developer team (the \"Owner\"). \"Content\" means any maps, skins, NPC models or other material that Users upload or display. \"Minecraft\" is a registered trade mark of Mojang AB/Microsoft; RexStudios is neither affiliated with nor endorsed by Mojang AB or Microsoft.",
+        "changes": "The Owner may amend these Terms whenever required for legal, technical or operational reasons. Material changes will be announced at least 15 days in advance by a notice on the Platform or by e-mail, and your continued use of the service after the effective date constitutes acceptance of the revised version.",
+        "contact": "For any questions or concerns regarding these Terms or the processing of your personal data, please e-mail us at [contact email].",
+
+        "sections": [
+            {
+                "heading": "1. Owner",
+                "body": "This website, RexStudios (the \"Platform\"), is operated by an independent team of developers (the \"Owner\"). You may contact us at [contact email]."
+            },
+            {
+                "heading": "2. Purpose and Scope",
+                "body": "The Platform serves solely as a showcase for maps, skin packs and NPC models created for Minecraft. Access to or use of the Platform implies full acceptance of these Terms."
+            },
+            {
+                "heading": "3. Age and Capacity",
+                "body": "Only natural persons aged 14 years or older with legal capacity may use the Platform. By registering, you represent and warrant that you meet this requirement."
+            },
+            {
+                "heading": "4. Registration and Accounts",
+                "body": "4.1 Accurate data – You must provide truthful, up-to-date information. 4.2 Credentials – You are responsible for safeguarding your login data and for all activity conducted through your account. 4.3 Suspension – The Owner may suspend or cancel your account for breach of these Terms or applicable law."
+            },
+            {
+                "heading": "5. User-Generated Content",
+                "body": "By uploading Content you grant the Owner a worldwide, royalty-free, non-exclusive licence for the entire legal term to host, reproduce, distribute and publicly communicate the Content on the Platform and for promotional purposes. You warrant that you own or hold sufficient rights to the Content and will indemnify the Owner against any third-party claims."
+            },
+            {
+                "heading": "6. Intellectual Property and Trade Marks",
+                "body": "Minecraft® is a registered trade mark of Mojang AB/Microsoft. The Platform is neither endorsed by nor affiliated with Mojang AB or Microsoft. Users may not use official Minecraft assets except as authorised by the rights holders and in accordance with the Minecraft brand and asset usage guidelines."
+            },
+            {
+                "heading": "7. Prohibited Conduct",
+                "body": "It is forbidden to: (i) upload unlawful, defamatory or infringing content; (ii) distribute malware or perform reverse engineering; (iii) circumvent technical protection measures; (iv) use the Platform for unauthorised commercial purposes."
+            },
+            {
+                "heading": "8. Moderation and Notice-and-Action",
+                "body": "In compliance with Regulation (EU) 2022/2065 (Digital Services Act) the Owner provides: (a) a notice channel for suspected unlawful content, (b) a prompt and reasoned takedown procedure with internal complaint mechanism, and (c) an annual transparency report on moderation measures."
+            },
+            {
+                "heading": "9. Disclaimer of Warranties",
+                "body": "The service is provided \"as is\" without any warranty of availability, accuracy or fitness for a particular purpose. The Owner does not warrant compatibility of the Content with specific Minecraft versions."
+            },
+            {
+                "heading": "10. Limitation of Liability",
+                "body": "Except where the law requires otherwise, the Owner’s total liability to the User is limited to EUR 100 for proven direct damages. Under no circumstances shall the Owner be liable for indirect or consequential damages, loss of profit or loss of data."
+            },
+            {
+                "heading": "11. Indemnity",
+                "body": "You shall hold the Owner harmless from and against any third-party claims arising from your use of the Platform or the Content you provide."
+            },
+            {
+                "heading": "12. Third-Party Links and Services",
+                "body": "The Platform may include links to third-party sites or services over which the Owner has no control; the Owner accepts no responsibility for their content, security or privacy practices."
+            },
+            {
+                "heading": "13. Amendments",
+                "body": "The Owner may modify these Terms when necessary. Material changes will be notified at least 15 days in advance. Continued use after the effective date signifies acceptance of the new Terms."
+            },
+            {
+                "heading": "14. Governing Law and Jurisdiction",
+                "body": "These Terms are governed by Spanish law. Any dispute shall be submitted to the courts of the Owner’s domicile, unless an overriding consumer protection rule prescribes a different forum."
+            }
+        ]
     }
-
-
-
 }
+

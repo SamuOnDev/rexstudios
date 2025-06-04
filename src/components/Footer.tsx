@@ -38,7 +38,7 @@ export default function Footer() {
 
                 {/* Social Media */}
                 <div className="flex gap-4">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-secondary">
+                <a href="https://x.com/RexStudios__" target="_blank" rel="noopener noreferrer" className="hover:text-secondary">
                     <FaXTwitter size={20} />
                 </a>
                 <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" className="hover:text-secondary">
