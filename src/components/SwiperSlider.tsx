@@ -31,7 +31,7 @@ export default function SwiperSlider() {
                                 fill
                                 className="object-cover"
                             />
-                            <div className="absolute inset-0 bg-black/40 transition-opacity group-hover:bg-black/50" />
+                            <div className="absolute inset-0 bg-black/40 opacity-10 transition-opacity group-hover:opacity-100 bg-black/15" />
                             <div className="absolute bottom-8 left-8 text-white z-20">
                                 <h2 className="font-heading mb-2 cursor-pointer text-xl md:text-3xl hover:scale-105 hover:font-semibold transition-all duration-200">
                                     {typeof map.name === "string" ? map.name : map.name["en"]}
