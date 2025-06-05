@@ -38,7 +38,7 @@ export default async function Page({
         <MapDetailSlider images={sliderImages} />
 
         <section className="max-w-7xl mx-auto bg-surfaceAlt rounded-2xl shadow-card px-4 sm:px-6 md:px-8 py-8 text-text/80">
-            <p className="text-lg lg:text-xl lg:leading-loose leading-relaxed">
+            <p className="text-justify text-lg lg:text-xl lg:leading-loose leading-relaxed">
             {longDescription}
             </p>
         </section>
