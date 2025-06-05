@@ -27,10 +27,10 @@
     },
     {
         "name": {
-            "en": "Desert Raid"
+            "en": "Willyrex Arena"
         },
-        "slug": "desert-raid",
-        "image": "/images/maps/map1/map1-1.png",
+        "slug": "willyrex-arena",
+        "image": "/images/maps/ArenaWillyrex/ArenaWillyrexThumbnail.png",
         "description": {
             "en": "Fight bandits in the desert tombs."
         },
@@ -39,9 +39,13 @@
         },
         "youtube": "YOUTUBE_ID_HERE",
         "slider": [
-        "/images/maps/map2/map2-1.png",
-        "/images/maps/map2/map2-2.png",
-        "/images/maps/map2/map2-3.png"
+        "/images/maps/ArenaWillyrex/ArenaWillyrexThumbnail.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex01.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex02.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex03.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex04.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex05.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex06.png"
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
