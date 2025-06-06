@@ -1,27 +1,62 @@
 [
-    { 
-        "name": "Knight Skin", 
+    {
+        "name": { "en": "Knight Skin" },
+        "slug": "knight-skin",
         "image": "/images/skins/skin001.png",
+        "description": { "en": "A classic armored warrior look for fearless adventurers." },
+        "youtube": "dQw4w9WgXcQ",
+        "slider": [
+        "/images/skins/skin001.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
     },
-    { 
-        "name": "Mage Skin", 
+    {
+        "name": { "en": "Mage Skin" },
+        "slug": "mage-skin",
         "image": "/images/skins/skin002.png",
+        "description": { "en": "Conjure powerful spells with this mystical skin." },
+        "youtube": "dQw4w9WgXcQ",
+        "slider": [
+        "/images/skins/skin002.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
     },
-    { 
-        "name": "Rogue Skin", 
+    {
+        "name": { "en": "Rogue Skin" },
+        "slug": "rogue-skin",
         "image": "/images/skins/skin003.png",
-        "featured": true 
+        "description": { "en": "Move silently and strike quickly in the shadows." },
+        "youtube": "dQw4w9WgXcQ",
+        "slider": [
+        "/images/skins/skin003.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
     },
-    { 
-        "name": "Paladin Skin", 
+    {
+        "name": { "en": "Paladin Skin" },
+        "slug": "paladin-skin",
         "image": "/images/skins/skin004.png",
+        "description": { "en": "A holy knight who defends justice and honor." },
+        "youtube": "dQw4w9WgXcQ",
+        "slider": [
+        "/images/skins/skin004.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": false
     },
-    { 
-        "name": "Archer Skin", 
+    {
+        "name": { "en": "Archer Skin" },
+        "slug": "archer-skin",
         "image": "/images/skins/skin005.png",
-        "featured": false 
+        "description": { "en": "Sharpshooter from afar with keen vision and steady aim." },
+        "youtube": "dQw4w9WgXcQ",
+        "slider": [
+        "/images/skins/skin005.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": false
     }
 ]
