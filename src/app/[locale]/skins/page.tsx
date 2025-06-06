@@ -1,11 +1,12 @@
 import Image from "next/image"
-import { getTranslations } from "next-intl/server"
+import { getTranslations, getLocale } from "next-intl/server"
 import Reveal from "@/components/shared/Reveal"
 import skins from "@/data/skins.json"
 import Link from "next/link"
 
 export default async function SkinsPage() {
     const t = await getTranslations("SkinsPage")
+    const locale = await getLocale()
 
     return (
         <main className="min-h-screen w-full py-16 px-4 sm:px-6 md:px-8">
@@ -15,25 +16,30 @@ export default async function SkinsPage() {
             </h1>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {skins.map((skin, index) => (
-                <Reveal key={index} delay={index * 0.1}>
-                <Link
-                    href={`/skins/${skin.name
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")}`}
-                    className="relative group overflow-hidden rounded-2xl shadow-card transition-transform duration-300 hover:scale-105 block"
-                >
-                    <div className="relative w-full aspect-[1/2] max-w-[300px] mx-auto">
-                    <Image
-                        src={skin.image}
-                        alt={skin.name}
-                        fill
-                        className="object-cover rounded-2xl"
-                    />
-                    </div>
-                </Link>
-                </Reveal>
-            ))}
+            {skins.map((skin, index) => {
+                const name =
+                    typeof skin.name === "string"
+                        ? skin.name
+                        : (skin.name as Record<string, string>)[locale as keyof typeof skin.name] || skin.name["en"]
+
+                return (
+                    <Reveal key={index} delay={index * 0.1}>
+                        <Link
+                            href={`/${locale}/skins/${skin.slug}`}
+                            className="relative group overflow-hidden rounded-2xl shadow-card transition-transform duration-300 hover:scale-105 block"
+                        >
+                            <div className="relative w-full aspect-[1/2] max-w-[300px] mx-auto">
+                                <Image
+                                    src={skin.image}
+                                    alt={name}
+                                    fill
+                                    className="object-cover rounded-2xl"
+                                />
+                            </div>
+                        </Link>
+                    </Reveal>
+                )
+            })}
             </div>
         </div>
         </main>
