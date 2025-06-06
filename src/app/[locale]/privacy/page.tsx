@@ -14,14 +14,14 @@ export default function PrivacyPage() {
             {t("title")}
             </h1>
 
-            <p className="text-text/70 mb-4">{t("intro")}</p>
-            <p className="text-text/70 mb-4">{t("dataUsage")}</p>
-            <p className="text-text/70 mb-4">{t("thirdParty")}</p>
+            <p className="text-text/70 md:text-justify mb-4">{t("intro")}</p>
+            <p className="text-text/70 md:text-justify mb-4">{t("dataUsage")}</p>
+            <p className="text-text/70 md:text-justify mb-4">{t("thirdParty")}</p>
 
             {sections.map((s, i) => (
             <div key={i} className="mb-6">
-                <h2 className="font-semibold text-text/90 mb-1">{s.heading}</h2>
-                <p className="text-text/70 whitespace-pre-line">{s.body}</p>
+                <h2 className="font-semibold text-text/90 md:text-justify mb-1">{s.heading}</h2>
+                <p className="text-text/70 md:text-justify whitespace-pre-line">{s.body}</p>
             </div>
             ))}
 

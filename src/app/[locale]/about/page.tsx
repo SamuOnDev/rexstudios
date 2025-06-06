@@ -20,7 +20,7 @@ export default async function AboutPage() {
                 {t('title')}
             </h1>
 
-            <div className="text-lg text-text/80 max-w-3xl mx-auto mb-16 text-center space-y-4">
+            <div className="text-lg text-text/80 max-w-3xl mx-auto mb-16 text-center md:text-justify space-y-4">
                 <p>{t('description1')}</p>
                 <p>{t('description2')}</p>
             </div>
