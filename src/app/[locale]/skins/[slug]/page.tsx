@@ -4,12 +4,12 @@ import skins from "@/data/skins.json";
 import RexButton from "@/components/RexButton";
 import Image from "next/image";
 
-export default async function Page({
-        params,
-    }: {
-        params: Promise<{ slug: string; locale: string }>;
-    }) {
-    const { slug, locale } = await params;
+interface Props {
+    params: { slug: string; locale: string };
+}
+
+export default async function Page({ params }: Props) {
+    const { slug, locale } = params;
     const t = await getTranslations({ locale });
 
     const skin = skins.find((s) => s.slug === slug);
@@ -26,7 +26,7 @@ export default async function Page({
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-surfaceAlt rounded-2xl shadow-card px-6 py-10">
             <div className="flex justify-center">
-            <div className="w-[150px] h-[300px] md:w-[200px] md:h-[400px] relative">
+            <div className="w-[150px] sm:w-[150px] md:w-[200px] h-[300px] sm:h-[300px] md:h-[400px] relative">
                 <Image
                 src={skin.image}
                 alt={title}
