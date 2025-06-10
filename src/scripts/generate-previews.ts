@@ -21,7 +21,7 @@ async function main() {
     const generateThumbnail = async (skin: Skin) => {
         const canvas = createCanvas(150, 300);
         const viewer = new skinview3d.SkinViewer({
-            canvas,
+            canvas: canvas as unknown as HTMLCanvasElement,
             width: 150,
             height: 300,
             skin: path.join(
