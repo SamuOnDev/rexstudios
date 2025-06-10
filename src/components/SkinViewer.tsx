@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import * as skinview3d from "skinview3d";
 
 export default function SkinViewer({ skinImage }: { skinImage: string }) {
-    const containerRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
         if (!containerRef.current) return;
@@ -18,7 +18,6 @@ export default function SkinViewer({ skinImage }: { skinImage: string }) {
         viewer.controls.enableZoom = true;
         viewer.controls.enableRotate = true;
         viewer.animation = new skinview3d.WalkingAnimation();
-        viewer.animation?.play();
 
         return () => {
         viewer.dispose();

@@ -1,14 +1,17 @@
 [
     {
-        "name": { "en": "Knight Skin" },
-        "slug": "knight-skin",
-        "image": "/images/skins/skin001.png",
-        "description": { "en": "A classic armored warrior look for fearless adventurers." },
+        "slug": "SkinWillyrexCartoon",
+        "name": {
+        "en": "Willyrex Cartoon",
+        "es": "Willyrex Dibujo Animado"
+        },
+        "description": {
+        "en": "Cartoon skin of Willyrex.",
+        "es": "Aspecto version dibujo animado de Willyrex."
+        },
+        "image": "/skins/SkinsWillyrexCartoon/SkinWillyrexCartoon.png",
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
         "youtube": "",
-        "slider": [
-        "/images/skins/skin001.png"
-        ],
-        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
     },
     {

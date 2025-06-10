@@ -15,12 +15,12 @@ export default function SkinsPage() {
                 <Link key={skin.slug} href={`/skins/${skin.slug}`} className="group">
                 <Image
                     src={`/previews/${skin.slug}.png`} // Miniatura generada
-                    alt={skin.name}
+                    alt={typeof skin.name === "string" ? skin.name : skin.name["en"]}
                     width={150}
                     height={300}
                     className="object-cover rounded-xl group-hover:scale-105 transition-all duration-300"
                 />
-                <p>{skin.name}</p>
+                <p>{typeof skin.name === "string" ? skin.name : skin.name["en"]}</p>
                 </Link>
             ))}
             </div>
