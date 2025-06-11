@@ -27,7 +27,7 @@ function setupDom() {
     } as MediaQueryList);
     window.HTMLCanvasElement = (createCanvas(1, 1) as unknown as HTMLCanvasElement).constructor as typeof HTMLCanvasElement;
     document.createElement = ((orig) => {
-        return function (tag: string) {
+        return function (this: Document, tag: string) {
             if (tag === "canvas") {
                 return createNodeCanvas(1, 1);
             }
