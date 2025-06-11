@@ -13,53 +13,5 @@
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
         "youtube": "",
         "featured": true
-    },
-    {
-        "name": { "en": "Mage Skin" },
-        "slug": "mage-skin",
-        "image": "/images/skins/skin002.png",
-        "description": { "en": "Conjure powerful spells with this mystical skin." },
-        "youtube": "",
-        "slider": [
-        "/images/skins/skin002.png"
-        ],
-        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
-        "featured": true
-    },
-    {
-        "name": { "en": "Rogue Skin" },
-        "slug": "rogue-skin",
-        "image": "/images/skins/skin003.png",
-        "description": { "en": "Move silently and strike quickly in the shadows." },
-        "youtube": "",
-        "slider": [
-        "/images/skins/skin003.png"
-        ],
-        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
-        "featured": true
-    },
-    {
-        "name": { "en": "Paladin Skin" },
-        "slug": "paladin-skin",
-        "image": "/images/skins/skin004.png",
-        "description": { "en": "A holy knight who defends justice and honor." },
-        "youtube": "",
-        "slider": [
-        "/images/skins/skin004.png"
-        ],
-        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
-        "featured": false
-    },
-    {
-        "name": { "en": "Archer Skin" },
-        "slug": "archer-skin",
-        "image": "/images/skins/skin005.png",
-        "description": { "en": "Sharpshooter from afar with keen vision and steady aim." },
-        "youtube": "",
-        "slider": [
-        "/images/skins/skin005.png"
-        ],
-        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
-        "featured": false
     }
 ]
