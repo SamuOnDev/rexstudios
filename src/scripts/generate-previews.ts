@@ -1,4 +1,4 @@
-import { createCanvas } from "canvas";
+import { createCanvas, Canvas } from "canvas";
 import gl from "gl";
 import { JSDOM } from "jsdom";
 import * as skinview3d from "skinview3d";
@@ -14,26 +14,30 @@ function setupDom() {
     const { window } = new JSDOM("<!DOCTYPE html>");
     (globalThis as unknown as { window: unknown; document: Document }).window = window as unknown;
     (globalThis as unknown as { window: unknown; document: Document }).document = window.document;
-    window.devicePixelRatio = 1;
+    Object.defineProperty(window, "devicePixelRatio", { value: 1 });
     window.matchMedia = () => ({
         matches: false,
+        media: "",
+        onchange: null,
         addEventListener() {},
         removeEventListener() {},
-    });
+        addListener() {},
+        removeListener() {},
+        dispatchEvent() { return false; },
+    } as MediaQueryList);
     window.HTMLCanvasElement = (createCanvas(1, 1) as unknown as HTMLCanvasElement).constructor as typeof HTMLCanvasElement;
     document.createElement = ((orig) => {
         return function (tag: string) {
             if (tag === "canvas") {
                 return createNodeCanvas(1, 1);
             }
-            // @ts-expect-error document.createElement signature differs
             return orig.call(this, tag);
         };
     })(document.createElement.bind(document));
 }
 
-function createNodeCanvas(width: number, height: number) {
-    const canvas = createCanvas(width, height);
+function createNodeCanvas(width: number, height: number): Canvas & HTMLCanvasElement {
+    const canvas: Canvas = createCanvas(width, height);
     const cast = canvas as unknown as { getContext(type: string, opts?: unknown): unknown };
     const orig = cast.getContext.bind(canvas);
     cast.getContext = (type: string, opts?: unknown) => {
@@ -44,7 +48,7 @@ function createNodeCanvas(width: number, height: number) {
     };
     (canvas as unknown as { addEventListener?: () => void; removeEventListener?: () => void }).addEventListener = () => {};
     (canvas as unknown as { addEventListener?: () => void; removeEventListener?: () => void }).removeEventListener = () => {};
-    return canvas as unknown as HTMLCanvasElement;
+    return canvas as unknown as Canvas & HTMLCanvasElement;
 }
 
 async function main() {
