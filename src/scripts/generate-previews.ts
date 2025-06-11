@@ -15,7 +15,7 @@ function setupDom() {
     (globalThis as unknown as { window: unknown; document: Document }).window = window as unknown;
     (globalThis as unknown as { window: unknown; document: Document }).document = window.document;
     Object.defineProperty(window, "devicePixelRatio", { value: 1 });
-    window.matchMedia = () => ({
+    const fakeMatchMedia = () => ({
         matches: false,
         media: "",
         onchange: null,
@@ -25,6 +25,8 @@ function setupDom() {
         removeListener() {},
         dispatchEvent() { return false; },
     } as MediaQueryList);
+    window.matchMedia = fakeMatchMedia;
+    (globalThis as unknown as { matchMedia: typeof fakeMatchMedia }).matchMedia = fakeMatchMedia;
     window.HTMLCanvasElement = (createCanvas(1, 1) as unknown as HTMLCanvasElement).constructor as typeof HTMLCanvasElement;
     document.createElement = ((orig) => {
         return function (this: Document, tag: string) {
