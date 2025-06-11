@@ -9,9 +9,84 @@
         "en": "Cartoon skin of Willyrex.",
         "es": "Aspecto version dibujo animado de Willyrex."
         },
-        "image": "/skins/SkinsWillyrexCartoon/SkinWillyrexCartoon.png",
+        "image": "/images/skins/SkinsWillyrexCartoon/SkinWillyrexCartoon.png",
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
         "youtube": "",
         "featured": true
+    },
+    {
+        "slug": "SkinVegettaCartoon",
+        "name": {
+        "en": "Vegetta Cartoon",
+        "es": "Vegetta Dibujo Animado"
+        },
+        "description": {
+        "en": "Cartoon skin of Vegetta.",
+        "es": "Aspecto version dibujo animado de Vegetta."
+        },
+        "image": "/images/skins/SkinsWillyrexCartoon/SkinVegetaCartoon.png",
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
+        "youtube": "",
+        "featured": true
+    },
+    {
+        "slug": "SkinVeranoRubius",
+        "name": {
+        "en": "Summer Rubius",
+        "es": "Rubius Verano"
+        },
+        "description": {
+        "en": "Summer skin of Rubius.",
+        "es": "Aspecto version verano de Rubius."
+        },
+        "image": "/images/skins/SkinsVerano/SkinVeranoRubius.png",
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
+        "youtube": "",
+        "featured": true
+    },
+    {
+        "slug": "SkinVeranoAlexby",
+        "name": {
+        "en": "Summer Alexby",
+        "es": "Alexby Verano"
+        },
+        "description": {
+        "en": "Summer skin of Alexby.",
+        "es": "Aspecto version verano de Alexby."
+        },
+        "image": "/images/skins/SkinsVerano/SkinVeranoAlexby.png",
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
+        "youtube": "",
+        "featured": false
+    },
+    {
+        "slug": "SkinVeranoFargan",
+        "name": {
+        "en": "Summer Fargan",
+        "es": "Fargan Verano"
+        },
+        "description": {
+        "en": "Summer skin of Fargan.",
+        "es": "Aspecto version verano de Fargan."
+        },
+        "image": "/images/skins/SkinsVerano/SkinVeranoFargan.png",
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
+        "youtube": "",
+        "featured": false
+    },
+    {
+        "slug": "SkinVeranoLolito",
+        "name": {
+        "en": "Summer Lolito",
+        "es": "Lolito Verano"
+        },
+        "description": {
+        "en": "Summer skin of Lolito.",
+        "es": "Aspecto version verano de Lolito."
+        },
+        "image": "/images/skins/SkinsVerano/SkinVeranoLolito.png",
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace/product/knight",
+        "youtube": "",
+        "featured": false
     }
 ]

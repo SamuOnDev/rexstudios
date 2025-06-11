@@ -1,4 +1,4 @@
-import {NextRequest} from 'next/server';
+import { NextRequest } from "next/server";
 import createIntlMiddleware from 'next-intl/middleware';
 
 /* 1.  Ajusta la lista a los idiomas que realmente tengas mensajes */
@@ -14,6 +14,8 @@ export function middleware(request: NextRequest) {
 
 /* 3.  Limita las rutas en las que se aplica */
 export const config = {
-  matcher: ['/((?!_next|images|favicon.ico|assets|.*\\..*).*)']
+  matcher: [
+    '/((?!api|_next|images|favicon.ico|assets|.*\\..*).*)'
+  ]
 }
 
