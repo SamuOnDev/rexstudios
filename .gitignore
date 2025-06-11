@@ -40,3 +40,6 @@ postcss.config.js.backup
 
 # Output static files (if exporting)
 public/static/
+
+# Ignore exported archive
+rexstudios.zip

@@ -1,4 +1,6 @@
 import { createCanvas } from "canvas";
+import gl from "gl";
+import { JSDOM } from "jsdom";
 import * as skinview3d from "skinview3d";
 import fs from "fs";
 import path from "path";
@@ -8,7 +10,46 @@ interface Skin {
     image: string;
 }
 
+function setupDom() {
+    const { window } = new JSDOM("<!DOCTYPE html>");
+    (globalThis as unknown as { window: unknown; document: Document }).window = window as unknown;
+    (globalThis as unknown as { window: unknown; document: Document }).document = window.document;
+    window.devicePixelRatio = 1;
+    window.matchMedia = () => ({
+        matches: false,
+        addEventListener() {},
+        removeEventListener() {},
+    });
+    window.HTMLCanvasElement = (createCanvas(1, 1) as unknown as HTMLCanvasElement).constructor as typeof HTMLCanvasElement;
+    document.createElement = ((orig) => {
+        return function (tag: string) {
+            if (tag === "canvas") {
+                return createNodeCanvas(1, 1);
+            }
+            // @ts-expect-error document.createElement signature differs
+            return orig.call(this, tag);
+        };
+    })(document.createElement.bind(document));
+}
+
+function createNodeCanvas(width: number, height: number) {
+    const canvas = createCanvas(width, height);
+    const cast = canvas as unknown as { getContext(type: string, opts?: unknown): unknown };
+    const orig = cast.getContext.bind(canvas);
+    cast.getContext = (type: string, opts?: unknown) => {
+        if (type === "webgl" || type === "webgl2") {
+            return gl(width, height, Object.assign({ preserveDrawingBuffer: true }, opts));
+        }
+        return orig(type, opts);
+    };
+    (canvas as unknown as { addEventListener?: () => void; removeEventListener?: () => void }).addEventListener = () => {};
+    (canvas as unknown as { addEventListener?: () => void; removeEventListener?: () => void }).removeEventListener = () => {};
+    return canvas as unknown as HTMLCanvasElement;
+}
+
 async function main() {
+    
+    setupDom();
     const __dirname = path.resolve();
     const skinsPath = path.join(__dirname, "src", "data", "skins.json");
     const skins: Skin[] = JSON.parse(fs.readFileSync(skinsPath, "utf8"));
@@ -19,7 +60,7 @@ async function main() {
     }
 
     const generateThumbnail = async (skin: Skin) => {
-        const canvas = createCanvas(150, 300);
+        const canvas = createNodeCanvas(150, 300);
         const viewer = new skinview3d.SkinViewer({
             canvas: canvas as unknown as HTMLCanvasElement,
             width: 150,
