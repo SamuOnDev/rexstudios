@@ -29,7 +29,7 @@
         "title": "Our Models"
     },
     "SkinsPage": {
-        "title": "Character Skins"
+        "title": "Skin Packs"
     },
     "MapsPage": {
         "title": "Our Maps"
@@ -172,6 +172,9 @@
                 "body": "These Terms are governed by Spanish law. Any dispute shall be submitted to the courts of the Owner’s domicile, unless an overriding consumer protection rule prescribes a different forum."
             }
         ]
-    }
+    },
+    "SkinPackDetailPage": {
+        "buyPack": "View in Marketplace"
+    } 
 }
 

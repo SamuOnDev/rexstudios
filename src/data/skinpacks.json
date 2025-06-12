@@ -12,7 +12,7 @@
             "es": "Un pack de skins frescas para el verano."
         },
 
-        "image": "/skinpacks/SummerPack/SummerPackThumbnail.png",
+        "image": "/images/skinpacks/SummerPack/SummerPackThumbnail.png",
 
         "marketplace_url": "https://www.minecraft.net/...",
 
@@ -26,8 +26,42 @@
             },
             {
                 "name": { 
-                    "en": "Summer Willyrex", 
-                    "es": "Willyrex de Verano" 
+                    "en": "Summer Rubius", 
+                    "es": "Rubius de Verano" 
+                },
+                "image": "/previews/SkinVeranoRubius.png"
+            }
+        ]
+    },
+    {
+        "slug": "cartoon-pack",
+
+        "name": {
+            "en": "Cartoon Pack",
+            "es": "Pack dibujos animados"
+        },
+
+        "description": {
+            "en": "A pack of cartoon skins for adventurers.",
+            "es": "Un pack de skins de dibujos animados."
+        },
+
+        "image": "/images/skinpacks/CartoonPack/CartoonPackThumbnail.png",
+
+        "marketplace_url": "https://www.minecraft.net/...",
+
+        "skins": [
+            {
+                "name": {
+                    "en": "Cartoon Vegetta",
+                    "es": "Vegetta dibujo animado"
+                },
+                "image": "/previews/SkinVegettaCartoon.png"
+            },
+            {
+                "name": { 
+                    "en": "Cartoon Willyrex", 
+                    "es": "Willyrex dibujo animado" 
                 },
                 "image": "/previews/SkinWillyrexCartoon.png"
             }

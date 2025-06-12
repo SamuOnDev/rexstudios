@@ -1,68 +1,84 @@
-import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
-import skins from "@/data/skins.json";
-import RexButton from "@/components/RexButton";
-import Image from "next/image";
+"use client";
 
-interface Props {
-    params: { slug: string; locale: string };
-}
+import { useParams, notFound } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import skinpacks from "@/data/skinpacks.json";
+import Link from "next/link";
+import Reveal from "@/components/shared/Reveal";
+import SkinPackSlider from "@/components/SkinPackSlider";
 
-export default async function Page({ params }: Props) {
-    const { slug, locale } = params;
-    const t = await getTranslations({ locale });
+export default function SkinPackDetailPage() {
+    const params = useParams();
+    const locale = useLocale();
+    const t = useTranslations("SkinPackDetailPage");
 
-    const skin = skins.find((s) => s.slug === slug);
-    if (!skin) return notFound();
+    // Busca el pack según slug en la URL
+    const skinpack = Array.isArray(skinpacks)
+        ? skinpacks.find((p) => p.slug === params.slug)
+        : null;
 
-    const title = typeof skin.name === "string" ? skin.name : skin.name[locale as keyof typeof skin.name] || skin.name["en"];
-    const description = typeof skin.description === "string"
-        ? skin.description
-        : skin.description[locale as keyof typeof skin.description] || skin.description["en"];
+    if (!skinpack) notFound();
+
+    // Nombre y descripción en el idioma
+    const name =
+        typeof skinpack.name === "string"
+            ? skinpack.name
+            : skinpack.name[locale as keyof typeof skinpack.name] || skinpack.name["en"];
+    const description =
+        typeof skinpack.description === "string"
+            ? skinpack.description
+            : skinpack.description[locale as keyof typeof skinpack.description] || skinpack.description["en"];
+
+    // Array de imágenes: portada + skins del pack
+    const images = [
+        {
+            src: skinpack.image,
+            alt: name,
+        },
+        ...(Array.isArray(skinpack.skins)
+            ? skinpack.skins.map((skin) => ({
+                src: skin.image,
+                alt:
+                    typeof skin.name === "string"
+                        ? skin.name
+                        : skin.name[locale as keyof typeof skin.name] || skin.name["en"],
+            }))
+            : []),
+    ];
 
     return (
-        <main className="p-7">
-        <h1 className="text-5xl font-bold mb-10 text-center">{title}</h1>
+        <main className="min-h-screen w-full py-16 px-4 sm:px-6 md:px-8">
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-surfaceAlt rounded-2xl shadow-card px-6 py-10">
-            <div className="flex justify-center">
-            <div className="w-[150px] sm:w-[150px] md:w-[200px] h-[300px] sm:h-[300px] md:h-[400px] relative">
-                <Image
-                src={skin.image}
-                alt={title}
-                fill
-                className="object-cover rounded-xl"
-                />
+            {/* Slider de imágenes, fuera del marco blanco */}
+            <SkinPackSlider images={images} />
+
+            {/* Marco blanco con el resto del contenido */}
+            <div className="max-w-screen-xl mx-auto bg-surfaceAlt rounded-2xl shadow-card py-12 md:py-20 px-6 flex flex-col items-center">
+                <Reveal>
+                    <h1 className="text-3xl sm:text-4xl font-heading font-semibold mb-6 text-center">
+                        {name}
+                    </h1>
+                </Reveal>
+                {/* Descripción */}
+                <Reveal delay={0.2}>
+                    <div className="text-base text-text/80 text-center mb-8 max-w-xl mx-auto">
+                        {description}
+                    </div>
+                </Reveal>
+                {/* Botón marketplace */}
+                {skinpack.marketplace_url && (
+                    <Reveal delay={0.3}>
+                        <Link
+                            href={skinpack.marketplace_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block px-8 py-3 bg-primary text-white rounded-2xl text-lg font-semibold shadow transition hover:bg-primaryDark"
+                        >
+                            {t("buyPack", { defaultValue: "View in Marketplace" })}
+                        </Link>
+                    </Reveal>
+                )}
             </div>
-            </div>
-
-            <div className="flex flex-col justify-center gap-6 text-text/80 text-lg lg:text-xl">
-            <p className={skin.youtube ? "" : "my-auto"}>{description}</p>
-
-            {skin.youtube && (
-                <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-card">
-                <iframe
-                    src={`https://www.youtube-nocookie.com/embed/${skin.youtube}?rel=0&autoplay=0&controls=1`}
-                    title="Skin Video"
-                    allowFullScreen
-                    className="w-full h-full"
-                />
-                </div>
-            )}
-            </div>
-        </div>
-
-        {skin.marketplace_url && (
-            <div className="text-center mt-10 text-xl [&>a]:px-10 [&>a]:py-4 [&>a]:text-xl [&>a]:rounded-full [&>a]:font-semibold">
-            <RexButton href={skin.marketplace_url}>{t("MapDetailPage.ctaGetNow")}</RexButton>
-            </div>
-        )}
-
-        <div className="text-center text-xl mt-10">
-            <RexButton href={`/${locale}/skins`}>
-            {t("MapDetailPage.back")}
-            </RexButton>
-        </div>
         </main>
     );
 }
