@@ -1,66 +1,67 @@
 "use client";
 
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
 import Image from "next/image";
 import { useState } from "react";
 
-// Utilidad mínima de clases (por si no tienes clsx)
+
 function cn(...args: (string | boolean | undefined)[]) {
-  return args.filter(Boolean).join(" ");
+    return args.filter(Boolean).join(" ");
 }
 
 interface SkinPackSliderProps {
-  images: { src: string; alt: string }[];
+    images: { src: string; alt: string }[];
 }
 
 export default function SkinPackSlider({ images }: SkinPackSliderProps) {
+    const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
     const [activeIdx, setActiveIdx] = useState(0);
-    const [transitioning, setTransitioning] = useState(false);
 
-    const handleChange = (idx: number) => {
-        if (idx === activeIdx) return;
-        setTransitioning(true);
-        setTimeout(() => {
-        setActiveIdx(idx);
-        setTransitioning(false);
-        }, 180); // Duración del fade, igual que maps (ajustable)
+    const handleThumbClick = (idx: number) => {
+        if (swiperRef) {
+            swiperRef.slideTo(idx, 200);
+        }
     };
 
     return (
-        <div className="w-full max-w-3xl mx-auto mb-8">
-        {/* Imagen principal, tamaño igual que maps */}
-        <div className="relative rounded-2xl overflow-hidden shadow h-72 md:h-96 flex items-center justify-center bg-black">
+    <div className="w-full max-w-screen-xl mx-auto mb-12">
+        <div className="relative aspect-video rounded-2xl overflow-hidden shadow bg-black">
+            <Swiper
+                onSwiper={setSwiperRef}
+                onSlideChange={(s) => setActiveIdx(s.activeIndex)}
+                speed={200}
+                className="w-full h-full"
+            >
             {images.map((img, idx) => (
-            <Image
-                key={idx}
-                src={img.src}
-                alt={img.alt}
-                fill
-                className={cn(
-                "absolute inset-0 object-cover w-full h-full transition-opacity duration-200",
-                idx === activeIdx && !transitioning ? "opacity-100 z-10" : "opacity-0 z-0"
-                )}
-                draggable={false}
-                priority={idx === 0}
-            />
+            <SwiperSlide key={idx}>
+                <div className="relative w-full h-full">
+                    <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-cover"
+                        priority={idx === 0}
+                        draggable={false}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/40" />
+                </div>
+                </SwiperSlide>
             ))}
-            {/* Overlay degradado, como en maps */}
-            <div className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-b from-black/10 to-black/40" />
+            </Swiper>
         </div>
-        {/* Miniaturas debajo */}
         <div className="flex justify-center gap-3 mt-4 flex-wrap">
             {images.map((img, idx) => (
             <button
                 key={idx}
-                onClick={() => handleChange(idx)}
+                onClick={() => handleThumbClick(idx)}
                 aria-label={`Miniatura ${idx + 1}`}
+                type="button"
                 className={cn(
                 "relative rounded-xl overflow-hidden border-2 w-20 h-12 md:w-24 md:h-16 bg-black focus:outline-none",
-                activeIdx === idx
-                    ? "border-primary shadow-lg"
-                    : "border-transparent"
+                activeIdx === idx ? "border-primary shadow-lg" : "border-transparent"
                 )}
-                tabIndex={0}
-                type="button"
                 style={{ transition: "border-color 0.2s" }}
             >
                 <Image
@@ -74,6 +75,68 @@ export default function SkinPackSlider({ images }: SkinPackSliderProps) {
             </button>
             ))}
         </div>
+        <style jsx global>{`
+            .swiper-button-prev,
+            .swiper-button-next {
+            color: white;
+            background-color: rgba(30, 30, 30, 0.7);
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3rem;
+            height: 12rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: absolute;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            }
+
+            .swiper-button-prev:hover,
+            .swiper-button-next:hover {
+            background-color: rgba(50, 120, 80, 0.85);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5),
+                0 0 6px 2px rgba(100, 193, 134, 0.5);
+            border: 2px solid rgba(100, 193, 134, 0.7);
+            outline: none;
+            }
+
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+            font-size: 2.25rem;
+            }
+
+            @media (max-width: 768px) {
+            .swiper-button-prev,
+            .swiper-button-next {
+                height: 4rem;
+                width: 2rem;
+                padding: 0.25rem 0.5rem;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                transform: none;
+            }
+
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+                font-size: 1.5rem;
+            }
+            }
+
+            .swiper-pagination-bullet {
+            background-color: rgba(255, 255, 255, 0.4);
+            }
+
+            .swiper-pagination-bullet-active {
+            background-color: white;
+            transform: scale(1.25);
+            }
+        `}</style>
         </div>
     );
 }
