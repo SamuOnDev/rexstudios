@@ -41,7 +41,7 @@ export default function SkinPackSlider({ images }: SkinPackSliderProps) {
                         src={img.src}
                         alt={img.alt}
                         fill
-                        className="object-cover"
+                        className="object-contain object-center"
                         priority={idx === 0}
                         draggable={false}
                     />
@@ -69,7 +69,7 @@ export default function SkinPackSlider({ images }: SkinPackSliderProps) {
                 alt={img.alt}
                 width={128}
                 height={72}
-                className="object-cover w-full h-full"
+                className="object-contain object-center w-full h-full"
                 draggable={false}
                 />
             </button>

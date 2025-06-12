@@ -19,6 +19,20 @@
         "skins": [
             {
                 "name": {
+                    "en": "Summer Alexby",
+                    "es": "Alexby de Verano"
+                },
+                "image": "/previews/SkinVeranoAlexby.png"
+            },
+            {
+                "name": { 
+                    "en": "Summer Fargan", 
+                    "es": "Fargan de Verano" 
+                },
+                "image": "/previews/SkinVeranoFargan.png"
+            },
+            {
+                "name": {
                     "en": "Summer Lolito",
                     "es": "Lolito de Verano"
                 },

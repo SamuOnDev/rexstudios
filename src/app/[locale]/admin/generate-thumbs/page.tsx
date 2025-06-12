@@ -154,6 +154,13 @@ function SkinPreviewRow({ skin, onGenerated }: { skin: Skin; onGenerated: () => 
     const [generating, setGenerating] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
+    const SCALE = 3;
+    const VIEW_WIDTH = 150;
+    const VIEW_HEIGHT = 300;
+    const INTERNAL_WIDTH = VIEW_WIDTH * SCALE;
+    const INTERNAL_HEIGHT = VIEW_HEIGHT * SCALE;
+
+
     // Inicializa skinview3d cuando el componente monta
     useEffect(() => {
         if (canvasRef.current && !viewerRef.current) {
@@ -182,29 +189,31 @@ function SkinPreviewRow({ skin, onGenerated }: { skin: Skin; onGenerated: () => 
         setGenerating(true);
         setError(null);
         try {
-        const canvas = canvasRef.current;
-        if (!canvas) throw new Error("Canvas no disponible");
+            const canvas = canvasRef.current;
+            if (!canvas) throw new Error("Canvas no disponible");
 
-        if (viewerRef.current) {
-            const walkAnim = new skinview3d.WalkingAnimation();
-            viewerRef.current.zoom = 0.85;
-            viewerRef.current.animation = walkAnim;
-            walkAnim.progress = 0.25;
-            walkAnim.update(viewerRef.current.playerObject, 0);
-            viewerRef.current.playerObject.rotation.y = Math.PI / 8;
-            viewerRef.current.render();
-        }
+            if (viewerRef.current) {
+                const walkAnim = new skinview3d.WalkingAnimation();
+                viewerRef.current.zoom = 0.85;
+                viewerRef.current.animation = walkAnim;
+                viewerRef.current.height = 900;
+                viewerRef.current.width = 450;
+                walkAnim.progress = 0.25;
+                walkAnim.update(viewerRef.current.playerObject, 0);
+                viewerRef.current.playerObject.rotation.y = Math.PI / 8;
+                viewerRef.current.render();
+            }
 
-        const imageData = canvas.toDataURL("image/png");
+            const imageData = canvas.toDataURL("image/png");
 
-        const res = await fetch("/api/upload-preview", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ slug: skin.slug, imageData }),
-        });
+            const res = await fetch("/api/upload-preview", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ slug: skin.slug, imageData }),
+            });
 
-        if (!res.ok) throw new Error("Error al guardar el PNG");
-        onGenerated();
+            if (!res.ok) throw new Error("Error al guardar el PNG");
+            onGenerated();
         } catch (err) {
             setError((err as Error).message);
         }
@@ -216,8 +225,17 @@ function SkinPreviewRow({ skin, onGenerated }: { skin: Skin; onGenerated: () => 
             <td className="align-middle text-center">{skin.slug}</td>
             <td className="align-middle text-center">
             <div className="flex justify-center items-center h-full">
-                <canvas ref={canvasRef} width={300} height={600} style={{ border: "1px solid #aaa", background: "#eee", width: 150, height: 300 }} />
-
+                <canvas
+                    ref={canvasRef}
+                    width={INTERNAL_WIDTH}
+                    height={INTERNAL_HEIGHT}
+                    style={{
+                        width: VIEW_WIDTH,
+                        height: VIEW_HEIGHT,
+                        border: "1px solid #aaa",
+                        background: "#eee",
+                    }}
+                />
             </div>
             </td>
             <td className="align-middle text-center">{skin.name["en"]}</td>

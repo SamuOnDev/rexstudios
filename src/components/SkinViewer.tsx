@@ -8,11 +8,20 @@ export default function SkinViewer({ skinImage }: { skinImage: string }) {
     useEffect(() => {
         if (!containerRef.current) return;
 
+        const SCALE = 3;
+        const visualWidth = containerRef.current.clientWidth;
+        const internalWidth = visualWidth * SCALE;
+        const internalHeight = 500 * SCALE;
+
+        // Establece las dimensiones internas del canvas
+        containerRef.current.width = internalWidth;
+        containerRef.current.height = internalHeight;
+
         const viewer = new skinview3d.SkinViewer({
-        width: containerRef.current.clientWidth,
-        height: 500,
-        skin: skinImage,
-        canvas: containerRef.current
+            width: internalWidth,
+            height: internalHeight,
+            skin: skinImage,
+            canvas: containerRef.current
         });
 
         viewer.controls.enableZoom = true;
@@ -20,7 +29,7 @@ export default function SkinViewer({ skinImage }: { skinImage: string }) {
         viewer.animation = new skinview3d.WalkingAnimation();
 
         return () => {
-        viewer.dispose();
+            viewer.dispose();
         };
     }, [skinImage]);
 
