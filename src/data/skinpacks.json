@@ -1,0 +1,36 @@
+[
+    {
+        "slug": "summer-pack",
+
+        "name": {
+            "en": "Summer Pack",
+            "es": "Pack de verano"
+        },
+
+        "description": {
+            "en": "A pack of summer skins for adventurers.",
+            "es": "Un pack de skins frescas para el verano."
+        },
+
+        "image": "/skinpacks/SummerPack/SummerPackThumbnail.png",
+
+        "marketplace_url": "https://www.minecraft.net/...",
+
+        "skins": [
+            {
+                "name": {
+                    "en": "Summer Lolito",
+                    "es": "Lolito de Verano"
+                },
+                "image": "/previews/SkinVeranoLolito.png"
+            },
+            {
+                "name": { 
+                    "en": "Summer Willyrex", 
+                    "es": "Willyrex de Verano" 
+                },
+                "image": "/previews/SkinWillyrexCartoon.png"
+            }
+        ]
+    }
+]
