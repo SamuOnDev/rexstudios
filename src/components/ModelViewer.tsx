@@ -69,8 +69,8 @@ export default function ModelViewer({ modelUrl }: Props) {
     }, [modelUrl]);
 
     return (
-        <div className="w-full max-w-screen-xl mx-auto aspect-video">
-            <div ref={containerRef} className="w-full h-full rounded-xl shadow-lg" />
+        <div className="relative w-full max-w-screen-xl mx-auto aspect-video rounded-2xl overflow-hidden shadow mb-12">
+            <div ref={containerRef} className="w-full h-full" />
         </div>
     );
 }
