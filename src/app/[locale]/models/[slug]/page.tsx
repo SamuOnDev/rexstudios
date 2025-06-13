@@ -1,0 +1,61 @@
+'use client';
+
+import { useParams, notFound } from 'next/navigation';
+import { useLocale } from 'next-intl';
+import models from '@/data/models.json';
+import ModelViewer from '@/components/ModelViewer';
+import Reveal from '@/components/shared/Reveal';
+import RexButton from '@/components/RexButton';
+
+export default function ModelDetailPage() {
+    const params = useParams();
+    const locale = useLocale();
+
+    // Buscar modelo por slug
+    const model = Array.isArray(models)
+        ? models.find((m) => m.slug === params.slug)
+        : null;
+
+    if (!model) notFound();
+
+    const name =
+        typeof model.name === 'string'
+        ? model.name
+        : model.name[locale as keyof typeof model.name] || model.name['en'];
+
+    const description =
+        typeof model.description === 'string'
+        ? model.description
+        : model.description[locale as keyof typeof model.description] ||
+            model.description['en'];
+
+    return (
+        <main className="min-h-screen w-full py-16 px-4 sm:px-6 md:px-8">
+        <div className="max-w-screen-xl mx-auto bg-surfaceAlt rounded-2xl shadow-card py-12 md:py-20 px-6 flex flex-col items-center">
+            <Reveal>
+            <h1 className="text-3xl sm:text-4xl font-heading font-semibold mb-6 text-center">
+                {name}
+            </h1>
+            </Reveal>
+            <Reveal delay={0.2}>
+            <div className="text-base text-text/80 text-center mb-8 max-w-xl mx-auto">
+                {description}
+            </div>
+            </Reveal>
+            <Reveal delay={0.3}>
+                <div className="mb-6 text-center">
+                    {model.marketplace_url && (
+                    <RexButton
+                        href={model.marketplace_url}
+                        target="_blank"
+                    >
+                        View in Marketplace
+                    </RexButton>
+                    )}
+                </div>
+                <ModelViewer modelUrl={model.modelPath} />
+            </Reveal>
+        </div>
+        </main>
+    );
+}

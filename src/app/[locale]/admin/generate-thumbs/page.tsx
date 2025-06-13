@@ -80,7 +80,7 @@ export default function GenerateThumbsPage() {
                 <thead>
                 <tr>
                     <th className="text-center">Slug</th>
-                    <th className="text-center">Render 3D</th>
+                    {/* <th className="text-center">Render 3D</th> */}
                     <th className="text-center">Miniatura</th>
                     <th className="text-center">Nombre</th>
                     <th className="text-center">Estado</th>
@@ -90,11 +90,11 @@ export default function GenerateThumbsPage() {
                 {skinsConPreview.map((skin) => (
                     <tr key={skin.slug}>
                         <td className="align-middle text-center">{skin.slug}</td>
-                        <td className="align-middle text-center">
+                        {/* <td className="align-middle text-center">
                             <div className="flex justify-center items-center h-full">
                                 <SkinViewerCanvas skinUrl={skin.image} width={150} height={300} />
                             </div>
-                        </td>
+                        </td> */}
                         <td className="align-middle text-center">
                             <div className="flex justify-center items-center h-full">
                                 <Image
@@ -121,32 +121,32 @@ export default function GenerateThumbsPage() {
 }
 
 
-function SkinViewerCanvas({ skinUrl, width = 150, height = 300 }: { skinUrl: string; width?: number; height?: number }) {
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-    const viewerRef = useRef<skinview3d.SkinViewer | null>(null);
+// function SkinViewerCanvas({ skinUrl, width = 150, height = 300 }: { skinUrl: string; width?: number; height?: number }) {
+//     const canvasRef = useRef<HTMLCanvasElement>(null);
+//     const viewerRef = useRef<skinview3d.SkinViewer | null>(null);
 
-    useEffect(() => {
-        if (canvasRef.current && !viewerRef.current) {
-        viewerRef.current = new skinview3d.SkinViewer({
-            canvas: canvasRef.current,
-            width,
-            height,
-            skin: skinUrl,
-        });
-            viewerRef.current.zoom = 0.9;
-            viewerRef.current.animation = new skinview3d.WalkingAnimation();
-            viewerRef.current.playerObject.rotation.y = Math.PI / 8;
-        }
-        return () => {
-        if (viewerRef.current) {
-            viewerRef.current.dispose();
-            viewerRef.current = null;
-        }
-        };
-    }, [skinUrl, width, height]);
+//     useEffect(() => {
+//         if (canvasRef.current && !viewerRef.current) {
+//         viewerRef.current = new skinview3d.SkinViewer({
+//             canvas: canvasRef.current,
+//             width,
+//             height,
+//             skin: skinUrl,
+//         });
+//             viewerRef.current.zoom = 0.9;
+//             viewerRef.current.animation = new skinview3d.WalkingAnimation();
+//             viewerRef.current.playerObject.rotation.y = Math.PI / 8;
+//         }
+//         return () => {
+//         if (viewerRef.current) {
+//             viewerRef.current.dispose();
+//             viewerRef.current = null;
+//         }
+//         };
+//     }, [skinUrl, width, height]);
 
-    return <canvas ref={canvasRef} width={width} height={height} style={{ border: "1px solid #aaa", background: "#eee" }} />;
-}
+//     return <canvas ref={canvasRef} width={width} height={height} style={{ border: "1px solid #aaa", background: "#eee" }} />;
+// }
 
 function SkinPreviewRow({ skin, onGenerated }: { skin: Skin; onGenerated: () => void }) {
     const canvasRef = useRef<HTMLCanvasElement>(null);
