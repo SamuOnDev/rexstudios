@@ -3,15 +3,14 @@
 import { useParams, notFound } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import skinpacks from "@/data/skinpacks.json";
-import Link from "next/link";
+import RexButton from '@/components/RexButton';
 import Reveal from "@/components/shared/Reveal";
 import SkinPackSlider from "@/components/SkinPackSlider";
 
 export default function SkinPackDetailPage() {
     const params = useParams();
     const locale = useLocale();
-    const t = useTranslations("SkinPackDetailPage");
-
+    const t = useTranslations("ModelDetailPage");
     // Busca el pack según slug en la URL
     const skinpack = Array.isArray(skinpacks)
         ? skinpacks.find((p) => p.slug === params.slug)
@@ -68,14 +67,16 @@ export default function SkinPackDetailPage() {
                 {/* Botón marketplace */}
                 {skinpack.marketplace_url && (
                     <Reveal delay={0.3}>
-                        <Link
-                            href={skinpack.marketplace_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block px-8 py-3 bg-primary text-white rounded-2xl text-lg font-semibold shadow transition hover:bg-primaryDark"
-                        >
-                            {t("buyPack", { defaultValue: "View in Marketplace" })}
-                        </Link>
+                        <div className="mb-6 text-center">
+                            {skinpack.marketplace_url && (
+                            <RexButton
+                                href={skinpack.marketplace_url}
+                                target="_blank"
+                            >
+                                {t("viewMarketplace")}
+                            </RexButton>
+                            )}
+                        </div>
                     </Reveal>
                 )}
             </div>

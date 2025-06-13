@@ -175,6 +175,10 @@
     },
     "SkinPackDetailPage": {
         "buyPack": "View in Marketplace"
-    } 
+    },
+    "ModelDetailPage": {
+        "viewMarketplace": "View in Marketplace"
+    }
+
 }
 

@@ -3,6 +3,7 @@
         "slug": "willy-trex",
         "modelPath": "/models/willy_trex.gltf",
         "image": "/images/models/willy-trex.png",
+        "thumbnail": "/images/models/willy-trex.png",
         "featured": true,
         "name": {
             "en": "Willyrex T-Rex",
