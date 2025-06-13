@@ -39,7 +39,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+      className={`sticky top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
         scrolled ? "h-16 shadow-md bg-white/90 backdrop-blur" : "h-60 bg-base"
       } ${menuOpen ? "overflow-visible" : "overflow-hidden"} relative`}
     >
@@ -92,16 +92,22 @@ export default function Header() {
         {/* Botón menú móvil */}
         <button
           type="button"
-          className="md:hidden text-black border border-black rounded-lg p-2 shadow"
+          className={`md:hidden text-black border border-black rounded-lg shadow transition-all duration-300 ${
+            scrolled ? "p-1.5" : "p-2"
+          }`}
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? (
+            <X size={scrolled ? 20 : 24} />
+          ) : (
+            <Menu size={scrolled ? 20 : 24} />
+          )}
         </button>
       </div>
 
       {menuOpen && (
-        <nav className="absolute top-full mt-4 left-0 w-full bg-white rounded-lg shadow-lg py-4 flex flex-col items-center gap-4 text-text font-medium md:hidden">
+        <nav className="absolute top-full mt-2 left-4 right-4 bg-white rounded-lg shadow-lg py-4 px-4 flex flex-col items-center gap-4 text-text font-medium md:hidden">
           <Link href={`/${locale}`} onClick={() => setMenuOpen(false)}>{t("home")}</Link>
           <Link href={`/${locale}/maps`} onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
           <Link href={`/${locale}/skins`} onClick={() => setMenuOpen(false)}>{t("skins")}</Link>
