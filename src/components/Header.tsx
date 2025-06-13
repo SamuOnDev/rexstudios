@@ -8,6 +8,7 @@ import { useTranslations, useLocale } from "next-intl";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollPos, setScrollPos] = useState(0);
   const t = useTranslations("Header");
   const locale = useLocale();
 
@@ -18,6 +19,23 @@ export default function Header() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    if (menuOpen) {
+      const current = window.scrollY;
+      setScrollPos(current);
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${current}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+    } else {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      window.scrollTo(0, scrollPos);
+    }
+  }, [menuOpen, scrollPos]);
 
   return (
     <header
@@ -73,7 +91,8 @@ export default function Header() {
 
         {/* Botón menú móvil */}
         <button
-          className="md:hidden text-text"
+          type="button"
+          className="md:hidden text-black border border-black rounded-lg p-2 shadow"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
@@ -82,7 +101,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="absolute top-full left-0 w-full bg-white shadow-md py-4 flex flex-col items-center gap-4 text-text font-medium md:hidden">
+        <nav className="absolute top-full mt-4 left-0 w-full bg-white rounded-lg shadow-lg py-4 flex flex-col items-center gap-4 text-text font-medium md:hidden">
           <Link href={`/${locale}`} onClick={() => setMenuOpen(false)}>{t("home")}</Link>
           <Link href={`/${locale}/maps`} onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
           <Link href={`/${locale}/skins`} onClick={() => setMenuOpen(false)}>{t("skins")}</Link>

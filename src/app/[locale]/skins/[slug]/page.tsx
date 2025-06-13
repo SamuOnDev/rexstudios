@@ -6,6 +6,7 @@ import skinpacks from "@/data/skinpacks.json";
 import RexButton from '@/components/RexButton';
 import Reveal from "@/components/shared/Reveal";
 import SkinPackSlider from "@/components/SkinPackSlider";
+import BackButton from '@/components/BackButton';
 
 export default function SkinPackDetailPage() {
     const params = useParams();
@@ -79,6 +80,11 @@ export default function SkinPackDetailPage() {
                         </div>
                     </Reveal>
                 )}
+                <Reveal delay={0.4}>
+                    <div className="mt-6 text-center">
+                        <BackButton section="skinpacks" />
+                    </div>
+                </Reveal>
             </div>
         </main>
     );

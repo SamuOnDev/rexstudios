@@ -14,6 +14,22 @@
             "es": "Una poderosa y ancestral forma de Willyrex T-Rex."
         },
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace"
+    },
+    {
+        "slug": "vicente-vegetta",
+        "modelPath": "/models/vicente_vegetta.gltf",
+        "image": "/images/models/vicente-vegetta.png",
+        "thumbnail": "/images/models/vicente-vegetta.png",
+        "featured": true,
+        "name": {
+            "en": "Vicente Vegetta",
+            "es": "Vegetta Vicente"
+        },
+        "description": {
+            "en": "A powerful and ancient Vicente Vegetta.",
+            "es": "Una poderosa y ancestral forma de Vicente Vegetta."
+        },
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace"
     }
 
 ]

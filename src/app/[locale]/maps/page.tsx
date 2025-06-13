@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Reveal from "@/components/shared/Reveal";
 import maps from "@/data/maps.json";
 import Link from "next/link";
+import BackButton from '@/components/BackButton';
 
 export default function MapsPage() {
     const t = useTranslations("MapsPage");
@@ -48,6 +49,11 @@ export default function MapsPage() {
                         );
                     })}
                 </div>
+                <Reveal delay={0.4}>
+                    <div className="mt-6 text-center">
+                        <BackButton section="home" />
+                    </div>
+                </Reveal>
             </div>
         </main>
     );

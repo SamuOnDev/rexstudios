@@ -177,8 +177,13 @@
         "buyPack": "View in Marketplace"
     },
     "ModelDetailPage": {
-        "viewMarketplace": "View in Marketplace"
+        "viewMarketplace": "View in Marketplace",
+        "back": "← Back to Models"
+    },
+    "Shared": {
+        "back": "← Back"
     }
+
 
 }
 
