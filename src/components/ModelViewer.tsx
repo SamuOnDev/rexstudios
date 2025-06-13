@@ -25,7 +25,7 @@ export default function ModelViewer({ modelUrl }: Props) {
         scene.background = new THREE.Color('#ffffff');
 
         const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
-        camera.position.set(2, 1, 3);
+        camera.position.set(2, 1, 4);
 
         const renderer = new THREE.WebGLRenderer({ antialias: false });
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
