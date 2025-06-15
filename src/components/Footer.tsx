@@ -48,9 +48,9 @@ export default function Footer() {
                     <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" className="hover:text-secondary">
                         <FaDiscord size={20} />
                     </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-secondary">
-                        <FaYoutube size={20} />
-                    </a>
+                    <Link href={`/${locale}/sorpresa`}>
+                        <FaYoutube size={20} className="w-6 h-6 hover:text-secondary transition" />
+                    </Link>
                 </div>
 
                 {/* Legal links */}
