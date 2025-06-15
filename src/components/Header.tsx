@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
@@ -11,6 +12,7 @@ export default function Header() {
   const [scrollPos, setScrollPos] = useState(0);
   const t = useTranslations("Header");
   const locale = useLocale();
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -21,30 +23,21 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    const body = document.body;
-
     if (menuOpen) {
-      const scrollY = window.scrollY;
-      setScrollPos(scrollY);
-
-      body.style.position = 'fixed';
-      body.style.top = `-${scrollY}px`;
-      body.style.left = '0';
-      body.style.right = '0';
-      body.style.overflow = 'hidden'; // evita scroll del fondo
+      const current = window.scrollY;
+      setScrollPos(current);
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${current}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
     } else {
-      const y = scrollPos;
-
-      body.style.position = '';
-      body.style.top = '';
-      body.style.left = '';
-      body.style.right = '';
-      body.style.overflow = '';
-      window.scrollTo(0, y); // restaura scroll exacto
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      window.scrollTo(0, scrollPos);
     }
-  }, [menuOpen]);
-
-
+  }, [menuOpen, scrollPos]);
 
   return (
     <header
@@ -98,36 +91,31 @@ export default function Header() {
           <Link href={`/${locale}/contact`} className="block" onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
         </nav>
 
-        {/* Botón menú móvil */}
-        <button
-          type="button"
-          className={`md:hidden text-black border border-black rounded-lg shadow transition-all duration-300 ${
-            scrolled ? "p-1.5" : "p-2"
-          }`}
-          onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? (
-            <X size={scrolled ? 20 : 24} />
-          ) : (
-            <Menu size={scrolled ? 20 : 24} />
+        <div className="relative md:hidden" ref={menuRef}>
+          <button onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+          {menuOpen && (
+            <div className="absolute top-full left-0 w-full z-40 px-4 md:hidden">
+              <nav
+                ref={menuRef}
+                className="bg-white rounded-lg shadow-lg py-4 px-6 flex flex-col items-center gap-4 text-text font-medium"
+              >
+                <Link href={`/${locale}`} className="block" onClick={() => setMenuOpen(false)}>{t("home")}</Link>
+                <Link href={`/${locale}/maps`} className="block" onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
+                <Link href={`/${locale}/skins`} className="block" onClick={() => setMenuOpen(false)}>{t("skins")}</Link>
+                <Link href={`/${locale}/models`} className="block" onClick={() => setMenuOpen(false)}>{t("models")}</Link>
+                <Link href={`/${locale}/about`} className="block" onClick={() => setMenuOpen(false)}>{t("about")}</Link>
+                <Link href={`/${locale}/clients`} className="block" onClick={() => setMenuOpen(false)}>{t("clients")}</Link>
+                <Link href={`/${locale}/contact`} className="block" onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
+              </nav>
+            </div>
           )}
-        </button>
+        </div>
+        
       </div>
 
-      {menuOpen && (
-        <div className="fixed inset-0 z-40 pointer-events-none">
-          <nav className="absolute left-4 right-4 top-[4.5rem] bg-white rounded-lg shadow-lg py-4 px-4 flex flex-col items-center gap-4 text-text font-medium md:hidden pointer-events-auto">
-            <Link href={`/${locale}`} onClick={() => setMenuOpen(false)}>{t("home")}</Link>
-            <Link href={`/${locale}/maps`} onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
-            <Link href={`/${locale}/skins`} onClick={() => setMenuOpen(false)}>{t("skins")}</Link>
-            <Link href={`/${locale}/models`} onClick={() => setMenuOpen(false)}>{t("models")}</Link>
-            <Link href={`/${locale}/about`} onClick={() => setMenuOpen(false)}>{t("about")}</Link>
-            <Link href={`/${locale}/clients`} onClick={() => setMenuOpen(false)}>{t("clients")}</Link>
-            <Link href={`/${locale}/contact`} onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
-          </nav>
-        </div>
-      )}
+      
     </header>
   );
 }
