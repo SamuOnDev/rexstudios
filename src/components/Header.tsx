@@ -91,15 +91,15 @@ export default function Header() {
           <Link href={`/${locale}/contact`} className="block" onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
         </nav>
 
-        <div className="relative md:hidden" ref={menuRef}>
+        <div className="relative md:hidden w-full flex justify-end" ref={menuRef}>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
           {menuOpen && (
-            <div className="absolute top-full left-0 w-full z-40 px-4 md:hidden">
+            <div className="absolute top-full left-1/2 -translate-x-1/2 w-screen z-40 px-4 md:hidden">
               <nav
                 ref={menuRef}
-                className="bg-white rounded-lg shadow-lg py-4 px-6 flex flex-col items-center gap-4 text-text font-medium"
+                className="bg-white rounded-lg shadow-lg py-4 px-6 flex flex-col items-center gap-4 text-text font-medium w-full"
               >
                 <Link href={`/${locale}`} className="block" onClick={() => setMenuOpen(false)}>{t("home")}</Link>
                 <Link href={`/${locale}/maps`} className="block" onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
