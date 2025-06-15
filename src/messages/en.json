@@ -71,7 +71,7 @@
         "title": "Contact Us",
         "name": "Name",
         "email": "Email",
-        "portfolio": "Portfolio (optional)",
+        "portfolio": "Portfolio (optional) ",
         "discord": "Discord (optional)",
         "message": "Message",
         "submit": "Send Message",
