@@ -71,13 +71,13 @@
         "title": "Contact Us",
         "name": "Name",
         "email": "Email",
-        "discord": "Discord username",
-        "discordPlaceholder": "user",
-        "portfolio": "Portfolio / URL (optional)",
-        "portfolioPlaceholder": "https://your.site",
+        "portfolio": "Portfolio (optional)",
+        "discord": "Discord (optional)",
         "message": "Message",
         "submit": "Send Message",
-        "submitted": "Message submitted (mock)."
+        "sending": "Sending...",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again."
     },
     "PrivacyPage": {
         "title": "Privacy Policy",

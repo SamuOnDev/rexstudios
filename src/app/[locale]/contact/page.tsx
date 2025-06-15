@@ -1,117 +1,140 @@
-"use client";
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+'use client';
+import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+
+type Status = 'idle' | 'sending' | 'success' | 'error';
 
 export default function ContactPage() {
-    const t = useTranslations("ContactPage");
+    const t = useTranslations('ContactPage');
     const [form, setForm] = useState({
-        name: "",
-        email: "",
-        message: "",
-        portfolio: "",
-        discord: "",
+        name: '',
+        email: '',
+        message: '',
+        portfolio: '',
+        discord: ''
     });
+    const [status, setStatus] = useState<Status>('idle');
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        alert(t("submitted"));
+        setStatus('sending');
+        try {
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(form)
+        });
+        if (!res.ok) throw new Error(await res.text());
+        setStatus('success');
+        setForm({ name: '', email: '', message: '', portfolio: '', discord: '' });
+        } catch (err) {
+        console.error(err);
+        setStatus('error');
+        }
     };
 
     return (
-        <main className="min-h-screen max-w-screen-xl mx-auto px-6 py-16">
-            <h1 className="text-4xl md:text-5xl font-heading text-text mb-10 text-center">
-                {t("title")}
-            </h1>
+        <main className="mx-auto max-w-3xl p-6">
+        <h1 className="text-3xl font-bold mb-6">{t('title')}</h1>
+        <form onSubmit={handleSubmit} className="space-y-6">
 
-            <div className="bg-surfaceAlt p-8 rounded-2xl shadow max-w-3xl mx-auto">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-text mb-1">
-                            {t("name")}
-                        </label>
-                        <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            value={form.name}
-                            onChange={handleChange}
-                            required
-                            className="w-full px-4 py-2 rounded-md border border-gray-300 text-text bg-white"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-text mb-1">
-                            {t("email")}
-                        </label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            value={form.email}
-                            onChange={handleChange}
-                            required
-                            className="w-full px-4 py-2 rounded-md border border-gray-300 text-text bg-white"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="discord" className="block text-sm font-medium text-text mb-1">
-                            {t("discord")}
-                        </label>
-                        <input
-                            type="text"
-                            name="discord"
-                            id="discord"
-                            value={form.discord}
-                            onChange={handleChange}
-                            placeholder={t("discordPlaceholder")}
-                            className="w-full px-4 py-2 rounded-md border border-gray-300 text-text bg-white"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="portfolio" className="block text-sm font-medium text-text mb-1">
-                            {t("portfolio")}
-                        </label>
-                        <input
-                            type="url"
-                            name="portfolio"
-                            id="portfolio"
-                            value={form.portfolio}
-                            onChange={handleChange}
-                            placeholder={t("portfolioPlaceholder")}
-                            className="w-full px-4 py-2 rounded-md border border-gray-300 text-text bg-white"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="message" className="block text-sm font-medium text-text mb-1">
-                            {t("message")}
-                        </label>
-                        <textarea
-                            name="message"
-                            id="message"
-                            value={form.message}
-                            onChange={handleChange}
-                            rows={5}
-                            required
-                            className="w-full px-4 py-2 rounded-md border border-gray-300 text-text bg-white"
-                        />
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="bg-secondary hover:bg-opacity-90 text-white font-medium px-6 py-3 rounded-full transition border-2 border-transparent hover:bg-secondaryDark shadow-xl hover:border-green-400"
-                    >
-                        {t("submit")}
-                    </button>
-                </form>
+            <div>
+            <label htmlFor="name" className="block text-sm font-medium mb-1">
+                {t('name')}
+            </label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 shadow-sm border rounded-lg focus:ring-2 focus:ring-secondary"
+            />
             </div>
+
+            <div>
+            <label htmlFor="email" className="block text-sm font-medium mb-1">
+                {t('email')}
+            </label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 shadow-sm border rounded-lg focus:ring-2 focus:ring-secondary"
+            />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label htmlFor="portfolio" className="block text-sm font-medium mb-1">
+                {t('portfolio')}
+                </label>
+                <input
+                type="url"
+                id="portfolio"
+                name="portfolio"
+                value={form.portfolio}
+                onChange={handleChange}
+                className="w-full px-4 py-2 shadow-sm border rounded-lg focus:ring-2 focus:ring-secondary"
+                />
+            </div>
+            <div>
+                <label htmlFor="discord" className="block text-sm font-medium mb-1">
+                {t('discord')}
+                </label>
+                <input
+                type="text"
+                id="discord"
+                name="discord"
+                value={form.discord}
+                onChange={handleChange}
+                className="w-full px-4 py-2 shadow-sm border rounded-lg focus:ring-2 focus:ring-secondary"
+                />
+            </div>
+            </div>
+
+            <div>
+            <label htmlFor="message" className="block text-sm font-medium mb-1">
+                {t('message')}
+            </label>
+            <textarea
+                id="message"
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                required
+                rows={5}
+                className="w-full px-4 py-2 shadow-sm border rounded-lg focus:ring-2 focus:ring-secondary"
+            />
+            </div>
+
+            <div>
+            <button
+                type="submit"
+                disabled={status === 'sending'}
+                className="px-6 py-2 bg-secondary rounded-lg text-white hover:bg-secondary-dark transition disabled:opacity-50"
+            >
+                {status === 'sending' ? t('sending') : t('submit')}
+            </button>
+            {status === 'success' && (
+                <p className="mt-2 text-green-600">{t('success')}</p>
+            )}
+            {status === 'error' && (
+                <p className="mt-2 text-red-600">{t('error')}</p>
+            )}
+            </div>
+
+        </form>
         </main>
     );
 }
