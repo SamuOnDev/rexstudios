@@ -21,21 +21,30 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
+    const body = document.body;
+
     if (menuOpen) {
-      const current = window.scrollY;
-      setScrollPos(current);
-      document.body.style.position = "fixed";
-      document.body.style.top = `-${current}px`;
-      document.body.style.left = "0";
-      document.body.style.right = "0";
+      const scrollY = window.scrollY;
+      setScrollPos(scrollY);
+
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}px`;
+      body.style.left = '0';
+      body.style.right = '0';
+      body.style.overflow = 'hidden'; // evita scroll del fondo
     } else {
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      window.scrollTo(0, scrollPos);
+      const y = scrollPos;
+
+      body.style.position = '';
+      body.style.top = '';
+      body.style.left = '';
+      body.style.right = '';
+      body.style.overflow = '';
+      window.scrollTo(0, y); // restaura scroll exacto
     }
-  }, [menuOpen, scrollPos]);
+  }, [menuOpen]);
+
+
 
   return (
     <header
@@ -107,15 +116,17 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="absolute top-full mt-2 left-4 right-4 bg-white rounded-lg shadow-lg py-4 px-4 flex flex-col items-center gap-4 text-text font-medium md:hidden">
-          <Link href={`/${locale}`} onClick={() => setMenuOpen(false)}>{t("home")}</Link>
-          <Link href={`/${locale}/maps`} onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
-          <Link href={`/${locale}/skins`} onClick={() => setMenuOpen(false)}>{t("skins")}</Link>
-          <Link href={`/${locale}/models`} onClick={() => setMenuOpen(false)}>{t("models")}</Link>
-          <Link href={`/${locale}/about`} onClick={() => setMenuOpen(false)}>{t("about")}</Link>
-          <Link href={`/${locale}/clients`} onClick={() => setMenuOpen(false)}>{t("clients")}</Link>
-          <Link href={`/${locale}/contact`} onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
-        </nav>
+        <div className="fixed inset-0 z-40 pointer-events-none">
+          <nav className="absolute left-4 right-4 top-[4.5rem] bg-white rounded-lg shadow-lg py-4 px-4 flex flex-col items-center gap-4 text-text font-medium md:hidden pointer-events-auto">
+            <Link href={`/${locale}`} onClick={() => setMenuOpen(false)}>{t("home")}</Link>
+            <Link href={`/${locale}/maps`} onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
+            <Link href={`/${locale}/skins`} onClick={() => setMenuOpen(false)}>{t("skins")}</Link>
+            <Link href={`/${locale}/models`} onClick={() => setMenuOpen(false)}>{t("models")}</Link>
+            <Link href={`/${locale}/about`} onClick={() => setMenuOpen(false)}>{t("about")}</Link>
+            <Link href={`/${locale}/clients`} onClick={() => setMenuOpen(false)}>{t("clients")}</Link>
+            <Link href={`/${locale}/contact`} onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
+          </nav>
+        </div>
       )}
     </header>
   );

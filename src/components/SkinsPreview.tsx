@@ -1,16 +1,17 @@
 import Image from "next/image";
 import RexButton from "@/components/RexButton";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import skins from "@/data/skins.json";
 
 const featuredSkins = skins.filter(skin => skin.featured);
 
 export function SkinsPreview() {
     const locale = useLocale();
+    const t = useTranslations("SkinsPage");
 
     return (
         <section className="bg-surfaceAlt px-4 sm:px-6 md:px-8 py-12 md:py-20 rounded-2xl shadow-card max-w-screen-xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-heading font-semibold text-center mb-8">Skins</h2>
+            <h2 className="text-3xl sm:text-4xl font-heading font-semibold text-center mb-8">{t("title")}</h2>
             <div className="flex justify-center gap-6 md:gap-8 mb-10 flex-wrap">
                 {featuredSkins.map((skin, index) => {
                     const name = typeof skin.name === "string"
@@ -32,7 +33,7 @@ export function SkinsPreview() {
                 );
             })}
             </div>
-            <RexButton href="/skins">View all skins</RexButton>
+            <RexButton href="/skins">{t("viewAll")}</RexButton>
         </section>
     );
 }

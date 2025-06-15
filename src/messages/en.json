@@ -7,14 +7,41 @@
         "models": "Models",
         "about": "About",
         "clients": "Clients",
-        "contact": "Contact"
+        "contact": "Contact",
+        "logoAlt": "Rex Logo",
+        "toggleMenu": "Toggle menu"
     },
     "Footer": {
-        "rights": "© 2025 RexStudios. All rights reserved."
+        "rights": "© 2025 RexStudios. All rights reserved.",
+        "logoAlt": "Rex Logo",
+        "terms": "Terms & Conditions",
+        "privacy": "Privacy Policy"
     },
     "HomePage": {
         "title": "Welcome to RexStudios",
         "description": "We build immersive Minecraft experiences."
+    },
+    "AboutPreview": {
+        "title": "Who we are",
+        "description": "We are a creative team passionate about designing custom Minecraft maps for creators and communities. Focused on quality, creativity and collaboration.",
+        "readMore": "Read more"
+    },
+    "MapGalleryPreview": {
+        "title": "Map Gallery",
+        "viewAll": "View all maps"
+    },
+    "ClientsPreview": {
+        "title": "Our Clients",
+        "viewAll": "View all collaborators"
+    },
+    "ModelsPreview": {
+        "title": "Custom Models",
+        "viewAll": "View all models"
+    },
+    "ContactPreview": {
+        "title": "Get in Touch",
+        "description": "If you're a creator or brand looking to collaborate on your next Minecraft project, we're here to help.",
+        "cta": "Contact us"
     },
     "AboutPage": {
         "title": "About RexStudios",
@@ -29,7 +56,8 @@
         "title": "Our Models"
     },
     "SkinsPage": {
-        "title": "Skin Packs"
+        "title": "Skin Packs",
+        "viewAll": "View all skins"
     },
     "MapsPage": {
         "title": "Our Maps"
@@ -44,9 +72,12 @@
         "name": "Name",
         "email": "Email",
         "discord": "Discord username",
+        "discordPlaceholder": "user",
         "portfolio": "Portfolio / URL (optional)",
+        "portfolioPlaceholder": "https://your.site",
         "message": "Message",
-        "submit": "Send Message"
+        "submit": "Send Message",
+        "submitted": "Message submitted (mock)."
     },
     "PrivacyPage": {
         "title": "Privacy Policy",
@@ -179,6 +210,9 @@
     "ModelDetailPage": {
         "viewMarketplace": "View in Marketplace",
         "back": "← Back to Models"
+    },
+    "SkinPackSlider": {
+        "thumbnailAria": "Thumbnail"
     },
     "Shared": {
         "back": "← Back"

@@ -18,7 +18,7 @@ export default function ContactPage() {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert("Message submitted (mock).");
+        alert(t("submitted"));
     };
 
     return (
@@ -69,7 +69,7 @@ export default function ContactPage() {
                             id="discord"
                             value={form.discord}
                             onChange={handleChange}
-                            placeholder="user"
+                            placeholder={t("discordPlaceholder")}
                             className="w-full px-4 py-2 rounded-md border border-gray-300 text-text bg-white"
                         />
                     </div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                             id="portfolio"
                             value={form.portfolio}
                             onChange={handleChange}
-                            placeholder="https://your.site"
+                            placeholder={t("portfolioPlaceholder")}
                             className="w-full px-4 py-2 rounded-md border border-gray-300 text-text bg-white"
                         />
                     </div>

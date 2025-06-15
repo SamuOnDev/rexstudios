@@ -1,6 +1,6 @@
 import Image from "next/image";
 import RexButton from "@/components/RexButton";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import maps from "@/data/maps.json";
 
@@ -8,10 +8,11 @@ const featuredMaps = maps.filter((map) => map.featured && map.image);
 
 export function MapGalleryPreview() {
     const locale = useLocale();
+    const t = useTranslations("MapGalleryPreview");
 
     return (
         <section className="px-4 sm:px-6 md:px-8 py-12 md:py-20 max-w-screen-xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-heading font-semibold text-center mb-8">Map Gallery</h2>
+        <h2 className="text-3xl sm:text-4xl font-heading font-semibold text-center mb-8">{t("title")}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10">
             {featuredMaps.map((map) => (
             <Link
@@ -39,7 +40,7 @@ export function MapGalleryPreview() {
             </Link>
             ))}
         </div>
-        <RexButton href={`/${locale}/maps`}>View all maps</RexButton>
+        <RexButton href={`/${locale}/maps`}>{t("viewAll")}</RexButton>
         </section>
     );
 }

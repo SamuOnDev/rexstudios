@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import Image from "next/image";
 import { useState } from "react";
-
+import { useTranslations } from "next-intl";
 
 function cn(...args: (string | boolean | undefined)[]) {
     return args.filter(Boolean).join(" ");
@@ -18,6 +18,7 @@ interface SkinPackSliderProps {
 export default function SkinPackSlider({ images }: SkinPackSliderProps) {
     const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
     const [activeIdx, setActiveIdx] = useState(0);
+    const t = useTranslations("SkinPackSlider");
 
     const handleThumbClick = (idx: number) => {
         if (swiperRef) {
@@ -56,7 +57,7 @@ export default function SkinPackSlider({ images }: SkinPackSliderProps) {
             <button
                 key={idx}
                 onClick={() => handleThumbClick(idx)}
-                aria-label={`Miniatura ${idx + 1}`}
+                aria-label={`${t("thumbnailAria")} ${idx + 1}`}
                 type="button"
                 className={cn(
                 "relative rounded-xl overflow-hidden border-2 w-20 h-12 md:w-24 md:h-16 bg-black focus:outline-none",
