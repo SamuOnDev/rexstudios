@@ -43,15 +43,16 @@ export default async function Page({
                 <p className="text-justify text-lg lg:text-xl lg:leading-loose leading-relaxed">
                 {longDescription}
                 </p>
+                {map.marketplace_url && (
+                    <div className="text-center mt-10 text-xl [&>a]:px-10 [&>a]:py-4 [&>a]:text-xl [&>a]:rounded-full [&>a]:font-semibold">
+                    <RexButton href={map.marketplace_url} className="text-xl px-10 py-5">
+                        {t("MapDetailPage.ctaGetNow")}
+                    </RexButton>
+                    </div>
+                )}
             </section>
 
-            {map.marketplace_url && (
-                <div className="text-center mt-10 text-xl [&>a]:px-10 [&>a]:py-4 [&>a]:text-xl [&>a]:rounded-full [&>a]:font-semibold">
-                <RexButton href={map.marketplace_url} className="text-xl px-10 py-5">
-                    {t("MapDetailPage.ctaGetNow")}
-                </RexButton>
-                </div>
-            )}
+            
 
             {map.youtube && (
                 <div className="aspect-video max-w-screen-xl mx-auto mt-12 rounded-2xl overflow-hidden shadow-card">
@@ -65,9 +66,6 @@ export default async function Page({
             )}
 
             <div className="text-center text-xl mt-10">
-                <RexButton href={`/${locale}/maps`}>
-                    {t("MapDetailPage.back")}
-                </RexButton>
                 <Reveal delay={0.4}>
                     <div className="mt-6 text-center">
                         <BackButton section="maps" />
