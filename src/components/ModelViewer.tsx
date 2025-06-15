@@ -69,7 +69,6 @@ export default function ModelViewer({ modelUrl }: Props) {
         const resize = () => {
             const width = container.clientWidth;
             const height = container.clientHeight;
-            console.log('[ModelViewer] Resizing to', width, height);
             renderer.setSize(width, height);
             camera.aspect = width / height;
             camera.updateProjectionMatrix();
@@ -78,7 +77,6 @@ export default function ModelViewer({ modelUrl }: Props) {
         setTimeout(() => {
             requestAnimationFrame(() => {
                 resize();
-                console.log('[ModelViewer] Resize ejecutado tras render.');
             });
         }, 50);
 

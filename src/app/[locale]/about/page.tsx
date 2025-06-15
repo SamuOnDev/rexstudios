@@ -5,8 +5,6 @@ import Reveal from '@/components/shared/Reveal'
 export default async function AboutPage() {
     const t = await getTranslations('AboutPage')
     
-    console.log('📍 Cargando About desde [locale]/about/page.tsx');
-
     const founders = [
         { name: 'Finn', avatar: '/images/finn.png' },
         { name: 'Jake', avatar: '/images/jake.png' },

@@ -9,35 +9,29 @@ import { useTranslations, useLocale } from "next-intl";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrollPos, setScrollPos] = useState(0);
   const t = useTranslations("Header");
   const locale = useLocale();
   const menuRef = useRef<HTMLDivElement>(null);
 
+  // Listener de scroll que solo actualiza cuando el menú está cerrado
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (!menuOpen) {
+        setScrolled(window.scrollY > 50);
+      }
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [menuOpen]);
 
+  // Bloqueo de scroll de fondo al abrir el menú
   useEffect(() => {
     if (menuOpen) {
-      const current = window.scrollY;
-      setScrollPos(current);
-      document.body.style.position = "fixed";
-      document.body.style.top = `-${current}px`;
-      document.body.style.left = "0";
-      document.body.style.right = "0";
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      window.scrollTo(0, scrollPos);
+      document.body.style.overflow = "";
     }
-  }, [menuOpen, scrollPos]);
+  }, [menuOpen]);
 
   return (
     <header
@@ -45,17 +39,15 @@ export default function Header() {
         scrolled ? "h-16 shadow-md bg-white/90 backdrop-blur" : "h-60 bg-base"
       } ${menuOpen ? "overflow-visible" : "overflow-hidden"} relative`}
     >
-      {/* Imagen decorativa como suelo del header */}
+      {/* Franja decorativa con comportamiento original */}
       <div
-        className={`absolute bottom-0 left-0 w-full bg-[url('/images/header-strip.png')] bg-repeat-x bg-bottom bg-contain h-[50px] md:h-[70px] sm:h-[20px] pointer-events-none z-0 transition-all duration-300 ${
+        className={`absolute bottom-0 left-0 w-full bg-[url('/images/header-strip.png')] bg-repeat-x bg-bottom bg-contain h-[50px] sm:h-[20px] md:h-[70px] pointer-events-none z-0 transition-all duration-300 ${
           scrolled ? "translate-y-[40px] md:translate-y-[55px]" : "translate-y-0"
         }`}
-      ></div>
+      />
 
       {/* Contenido del header */}
-      <div
-        className="relative z-10 max-w-6xl mx-auto px-6 flex items-center justify-between h-full transition-all duration-300"
-      >
+      <div className="relative z-10 max-w-6xl mx-auto px-6 flex items-center justify-between h-full transition-all duration-300">
         {/* Logo + Nombre + Lema */}
         <div className="flex items-center gap-x-1 text-center md:text-left">
           <Image
@@ -86,36 +78,34 @@ export default function Header() {
           <Link href={`/${locale}/maps`} className="block" onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
           <Link href={`/${locale}/skins`} className="block" onClick={() => setMenuOpen(false)}>{t("skins")}</Link>
           <Link href={`/${locale}/models`} className="block" onClick={() => setMenuOpen(false)}>{t("models")}</Link>
-          <Link href={`/${locale}/about`} className="block" onClick={() => setMenuOpen(false)}>{t("about")}</Link>
           <Link href={`/${locale}/clients`} className="block" onClick={() => setMenuOpen(false)}>{t("clients")}</Link>
           <Link href={`/${locale}/contact`} className="block" onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
+          <Link href={`/${locale}/about`} className="block" onClick={() => setMenuOpen(false)}>{t("about")}</Link>
         </nav>
 
+        {/* Botón menú mobile */}
         <div className="relative md:hidden w-full flex justify-end" ref={menuRef}>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
           {menuOpen && (
-            <div className="absolute top-full left-1/2 -translate-x-1/2 w-screen z-40 px-4 md:hidden">
+            <div className="absolute inset-x-0 top-full mx-auto text-center w-full max-w-xs z-40 md:hidden">
               <nav
                 ref={menuRef}
-                className="bg-white rounded-lg shadow-lg py-4 px-6 flex flex-col items-center gap-4 text-text font-medium w-full"
+                className="bg-surface rounded-lg shadow-lg py-4 px-6 flex flex-col items-center gap-4 text-text font-medium w-full"
               >
                 <Link href={`/${locale}`} className="block" onClick={() => setMenuOpen(false)}>{t("home")}</Link>
                 <Link href={`/${locale}/maps`} className="block" onClick={() => setMenuOpen(false)}>{t("maps")}</Link>
                 <Link href={`/${locale}/skins`} className="block" onClick={() => setMenuOpen(false)}>{t("skins")}</Link>
                 <Link href={`/${locale}/models`} className="block" onClick={() => setMenuOpen(false)}>{t("models")}</Link>
-                <Link href={`/${locale}/about`} className="block" onClick={() => setMenuOpen(false)}>{t("about")}</Link>
                 <Link href={`/${locale}/clients`} className="block" onClick={() => setMenuOpen(false)}>{t("clients")}</Link>
                 <Link href={`/${locale}/contact`} className="block" onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
+                <Link href={`/${locale}/about`} className="block" onClick={() => setMenuOpen(false)}>{t("about")}</Link>
               </nav>
             </div>
           )}
         </div>
-        
       </div>
-
-      
     </header>
   );
 }
