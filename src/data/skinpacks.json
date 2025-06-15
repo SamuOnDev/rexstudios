@@ -45,7 +45,8 @@
                 },
                 "image": "/previews/SkinVeranoRubius.png"
             }
-        ]
+        ],
+        "featured" : true
     },
     {
         "slug": "cartoon-pack",
@@ -79,6 +80,7 @@
                 },
                 "image": "/previews/SkinWillyrexCartoon.png"
             }
-        ]
+        ],
+        "featured" : true
     }
 ]

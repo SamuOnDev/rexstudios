@@ -30,6 +30,22 @@
             "es": "Una poderosa y ancestral forma de Vicente Vegetta."
         },
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace"
+    },
+    {
+        "slug": "dinosaurio-acuatico",
+        "modelPath": "/models/dinosaurio_acuatico.gltf",
+        "image": "/images/models/dinosaurio-acuatico.png",
+        "thumbnail": "/images/models/dinosaurio-acuatico.png",
+        "featured": true,
+        "name": {
+            "en": "Aquatic Monster",
+            "es": "Criatura Acuatica"
+        },
+        "description": {
+            "en": "A powerful and ancient Aquatic Monster.",
+            "es": "Una poderosa Criatura Acuatica."
+        },
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace"
     }
 
 ]
