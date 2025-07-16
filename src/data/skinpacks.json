@@ -1,10 +1,10 @@
 [
     {
-        "slug": "summer-pack",
+        "slug": "karma-summer",
 
         "name": {
-            "en": "Summer Pack",
-            "es": "Pack de verano"
+            "en": "Karma Summer",
+            "es": "Karma Summer"
         },
 
         "description": {
@@ -22,28 +22,49 @@
                     "en": "Summer Alexby",
                     "es": "Alexby de Verano"
                 },
-                "image": "/previews/SkinVeranoAlexby.png"
+                "image": "/previews/AlexbyKarmaSummer.png"
             },
             {
                 "name": { 
                     "en": "Summer Fargan", 
                     "es": "Fargan de Verano" 
                 },
-                "image": "/previews/SkinVeranoFargan.png"
+                "image": "/previews/FarganKarmaSummer.png"
             },
             {
                 "name": {
                     "en": "Summer Lolito",
                     "es": "Lolito de Verano"
                 },
-                "image": "/previews/SkinVeranoLolito.png"
+                "image": "/previews/LolitoKarmaSummer.png"
             },
             {
                 "name": { 
                     "en": "Summer Rubius", 
                     "es": "Rubius de Verano" 
                 },
-                "image": "/previews/SkinVeranoRubius.png"
+                "image": "/previews/RubiusKarmaSummer.png"
+            },
+            {
+                "name": { 
+                    "en": "Summer Staxx", 
+                    "es": "Staxx de Verano" 
+                },
+                "image": "/previews/StaxxKarmaSummer.png"
+            },
+            {
+                "name": { 
+                    "en": "Summer Vegetta", 
+                    "es": "Vegetta de Verano" 
+                },
+                "image": "/previews/VegettaKarmaSummer.png"
+            },
+            {
+                "name": { 
+                    "en": "Summer Willyrex", 
+                    "es": "Willrex de Verano" 
+                },
+                "image": "/previews/WillyrexKarmaSummer.png"
             }
         ],
         "featured" : true
@@ -79,6 +100,40 @@
                     "es": "Willyrex dibujo animado" 
                 },
                 "image": "/previews/SkinWillyrexCartoon.png"
+            }
+        ],
+        "featured" : true
+    },{
+        "slug": "ninja-wigetta",
+
+        "name": {
+            "en": "Ninja Wigetta",
+            "es": "Wigetta Ninja"
+        },
+
+        "description": {
+            "en": "A pack of summer skins for adventurers.",
+            "es": "Un pack de skins frescas para el verano."
+        },
+
+        "image": "/images/skinpacks/SkinsWillyrexNinja/NinjaWigettaThumbnail.png",
+
+        "marketplace_url": "https://www.minecraft.net/...",
+
+        "skins": [
+            {
+                "name": {
+                    "en": "Ninja Willyrex",
+                    "es": "Willyrex Ninja"
+                },
+                "image": "/images/skinpacks/SkinsWillyrexNinja/WillyrexNinja.png"
+            },
+            {
+                "name": {
+                    "en": "Ninja Willyrex",
+                    "es": "Willyrex Ninja"
+                },
+                "image": "/images/skinpacks/SkinsWillyrexNinja/VegettaNinja.png"
             }
         ],
         "featured" : true

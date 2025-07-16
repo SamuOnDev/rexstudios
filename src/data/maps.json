@@ -20,7 +20,9 @@
         "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex04.png",
         "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex05.png",
         "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex06.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex07.png"
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex07.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex08.png",
+        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex09.png"
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
@@ -52,9 +54,9 @@
     },
     {
         "name": {
-            "en": "Sky Islands"
+            "en": "Battle Building Diminutos"
         },
-        "slug": "sky-islands",
+        "slug": "battle-building-diminutos",
         "image": "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrexThumbnail.png",
         "description": {
             "en": "Dream inside that amazing map making your best buildings."
