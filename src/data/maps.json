@@ -1,6 +1,228 @@
 [
     {
         "name": {
+            "en": "Willyrex Arena"
+        },
+        "slug": "willyrex-arena",
+        "image": "/images/maps/ArenaWillyrex/ArenaWillyrexThumbnail.png",
+        "description": {
+            "en": "Enter Willyrex Arena—a dynamic playground where every sword swing and sprint can crown a new champion."
+        },
+        "longDescription": {
+            "en": "Dare to cross the gates of Willyrex Arena, a venue that throbs with anticipation and shifts tempo with every contender.\nTiered stands rise in concentric rings, and each roar of the crowd booms across the ground, quickening the duelists’ pulse.\nAll entrances funnel into a central ring where distance collapses and every move demands absolute precision.\nThere are no distractions—only the floor beneath your feet, cutting air, and the spectators’ unblinking gaze.\nClashes flow one into another; each victory leaves a fleeting mark, as ephemeral as it is unforgettable.\nAs shadows lengthen, the atmosphere thickens and challenges emerge that test the steadiest nerves.\nLeaving the Arena is not retreating: it is carrying the certainty that you measured your worth before all."
+        },
+        "youtube": "YadYrBFubpg",
+        "slider": [
+        "/images/maps/ArenaWillyrex/ArenaWillyrex01.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex02.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex03.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex04.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex05.png",
+        "/images/maps/ArenaWillyrex/ArenaWillyrex06.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
+            "en": "Battle Building Diminutos"
+        },
+        "slug": "battle-building-diminutos",
+        "image": "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrexThumbnail.png",
+        "description": {
+            "en": "Dream inside that amazing map making your best buildings."
+        },
+        "longDescription": {
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex01.png",
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex02.png",
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex03.png",
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex04.png",
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex05.png",
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex06.png",
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex07.png",
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex08.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
+            "en": "Circus"
+        },
+        "slug": "circus-map",
+        "image": "/images/maps/Circo/CircoThumbnail.png",
+        "description": {
+            "en": "Dream inside that amazing map making your best performances."
+        },
+        "longDescription": {
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/Circo/circo01.png",
+            "/images/maps/Circo/circo02.png",
+            "/images/maps/Circo/circo03.png",
+            "/images/maps/Circo/circo04.png",
+            "/images/maps/Circo/circo05.png",
+            "/images/maps/Circo/circo06.png",
+            "/images/maps/Circo/circo07.png",
+            "/images/maps/Circo/circo08.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
+            "en": "West Town"
+        },
+        "slug": "west-town-map",
+        "image": "/images/maps/WestTown/WestTownThumbnail.png",
+        "description": {
+            "en": "Dream inside that amazing map making your best performances."
+        },
+        "longDescription": {
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/WestTown/westtown01.png",
+            "/images/maps/WestTown/westtown02.png",
+            "/images/maps/WestTown/westtown03.png",
+            "/images/maps/WestTown/westtown04.png",
+            "/images/maps/WestTown/westtown05.png",
+            "/images/maps/WestTown/westtown06.png",
+            "/images/maps/WestTown/westtown07.png",
+            "/images/maps/WestTown/westtown08.png",
+            "/images/maps/WestTown/westtown09.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
+            "en": "Pirate Lighthouse"
+        },
+        "slug": "pirate-lighthouse-map",
+        "image": "/images/maps/FaroPirata/FaroPirataThumbnail.png",
+        "description": {
+            "en": "Dream inside that amazing map making your best performances."
+        },
+        "longDescription": {
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/FaroPirata/faropirata01.png",
+            "/images/maps/FaroPirata/faropirata02.png",
+            "/images/maps/FaroPirata/faropirata03.png",
+            "/images/maps/FaroPirata/faropirata04.png",
+            "/images/maps/FaroPirata/faropirata05.png",
+            "/images/maps/FaroPirata/faropirata06.png",
+            "/images/maps/FaroPirata/faropirata07.png",
+            "/images/maps/FaroPirata/faropirata08.png",
+            "/images/maps/FaroPirata/faropirata09.png",
+            "/images/maps/FaroPirata/faropirata10.png",
+            "/images/maps/FaroPirata/faropirata11.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
+            "en": "Japanese Temple"
+        },
+        "slug": "japanese-temple-map",
+        "image": "/images/maps/MapaJapones/MapaJaponesThumbnail.png",
+        "description": {
+            "en": "Dream inside that amazing map making your best performances."
+        },
+        "longDescription": {
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/MapaJapones/mapajapones01.png",
+            "/images/maps/MapaJapones/mapajapones02.png",
+            "/images/maps/MapaJapones/mapajapones03.png",
+            "/images/maps/MapaJapones/mapajapones04.png",
+            "/images/maps/MapaJapones/mapajapones05.png",
+            "/images/maps/MapaJapones/mapajapones06.png",
+            "/images/maps/MapaJapones/mapajapones07.png",
+            "/images/maps/MapaJapones/mapajapones08.png",
+            "/images/maps/MapaJapones/mapajapones09.png",
+            "/images/maps/MapaJapones/mapajapones10.png",
+            "/images/maps/MapaJapones/mapajapones11.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
+            "en": "Oasis Mill"
+        },
+        "slug": "oasis-mill-map",
+        "image": "/images/maps/Oasis/OasisThumbnail.png",
+        "description": {
+            "en": "Dream inside that amazing map making your best performances."
+        },
+        "longDescription": {
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/Oasis/oasis01.png",
+            "/images/maps/Oasis/oasis02.png",
+            "/images/maps/Oasis/oasis03.png",
+            "/images/maps/Oasis/oasis04.png",
+            "/images/maps/Oasis/oasis05.png",
+            "/images/maps/Oasis/oasis06.png",
+            "/images/maps/Oasis/oasis07.png",
+            "/images/maps/Oasis/oasis08.png",
+            "/images/maps/Oasis/oasis09.png",
+            "/images/maps/Oasis/oasis10.png",
+            "/images/maps/Oasis/oasis11.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
+            "en": "Circuito Willyrex"
+        },
+        "slug": "circuito-willyrex-map",
+        "image": "/images/maps/CircuitoWillyrex/CircuitoWillyrexThumbnail.png",
+        "description": {
+            "en": "Dream inside that amazing map making your best performances."
+        },
+        "longDescription": {
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/CircuitoWillyrex/circuitowillyrex01.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex02.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex03.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex04.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex05.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex06.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex07.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex08.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex09.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex10.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex11.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex12.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex13.png",
+            "/images/maps/CircuitoWillyrex/circuitowillyrex14.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
+    },
+    {
+        "name": {
             "en": "Willyrex Parkour"
         },
         "slug": "willyrex-parkour",
@@ -29,114 +251,81 @@
     },
     {
         "name": {
-            "en": "Willyrex Arena"
+            "en": "Subway Station"
         },
-        "slug": "willyrex-arena",
-        "image": "/images/maps/ArenaWillyrex/ArenaWillyrexThumbnail.png",
+        "slug": "subway-station-map",
+        "image": "/images/maps/SubwayStation/SubwayStationThumbnail.png",
         "description": {
-            "en": "Enter Willyrex Arena—a dynamic playground where every sword swing and sprint can crown a new champion."
-        },
-        "longDescription": {
-            "en": "Dare to cross the gates of Willyrex Arena, a venue that throbs with anticipation and shifts tempo with every contender.\nTiered stands rise in concentric rings, and each roar of the crowd booms across the ground, quickening the duelists’ pulse.\nAll entrances funnel into a central ring where distance collapses and every move demands absolute precision.\nThere are no distractions—only the floor beneath your feet, cutting air, and the spectators’ unblinking gaze.\nClashes flow one into another; each victory leaves a fleeting mark, as ephemeral as it is unforgettable.\nAs shadows lengthen, the atmosphere thickens and challenges emerge that test the steadiest nerves.\nLeaving the Arena is not retreating: it is carrying the certainty that you measured your worth before all."
-        },
-        "youtube": "YadYrBFubpg",
-        "slider": [
-        "/images/maps/ArenaWillyrex/ArenaWillyrexThumbnail.png",
-        "/images/maps/ArenaWillyrex/ArenaWillyrex01.png",
-        "/images/maps/ArenaWillyrex/ArenaWillyrex02.png",
-        "/images/maps/ArenaWillyrex/ArenaWillyrex03.png",
-        "/images/maps/ArenaWillyrex/ArenaWillyrex04.png",
-        "/images/maps/ArenaWillyrex/ArenaWillyrex05.png",
-        "/images/maps/ArenaWillyrex/ArenaWillyrex06.png"
-        ],
-        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
-        "featured": true
-    },
-    {
-        "name": {
-            "en": "Battle Building Diminutos"
-        },
-        "slug": "battle-building-diminutos",
-        "image": "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrexThumbnail.png",
-        "description": {
-            "en": "Dream inside that amazing map making your best buildings."
+            "en": "Dream inside that amazing map making your best performances."
         },
         "longDescription": {
             "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrexThumbnail.png",
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex01.png",
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex02.png",
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex03.png",
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex04.png",
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex05.png",
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex06.png",
-            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex07.png"
+            "/images/maps/SubwayStation/subwaystation01.png",
+            "/images/maps/SubwayStation/subwaystation02.png",
+            "/images/maps/SubwayStation/subwaystation03.png",
+            "/images/maps/SubwayStation/subwaystation04.png",
+            "/images/maps/SubwayStation/subwaystation05.png",
+            "/images/maps/SubwayStation/subwaystation06.png",
+            "/images/maps/SubwayStation/subwaystation07.png"
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
     },
     {
         "name": {
-            "en": "Jungle Escape"
+            "en": "Medieval Castle"
         },
-        "slug": "jungle-escape",
-        "image": "/images/maps/map4/map4-1.png",
+        "slug": "medieval-map",
+        "image": "/images/maps/MapaMedieval/MapaMedievalThumbnail.png",
         "description": {
-            "en": "Survive in the jungle."
+            "en": "Dream inside that amazing map making your best performances."
         },
         "longDescription": {
-            "en": "Navigate dense jungle terrain, solve puzzles, and escape ancient traps while trying to survive in this thrilling escape map."
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
         },
-        "youtube": null,
+        "youtube": "tSZ_ZY1_ewg",
         "slider": [
-        "/images/maps/map4/map4-1.png",
-        "/images/maps/map4/map4-2.png",
-        "/images/maps/map4/map4-3.png"
+            "/images/maps/MapaMedieval/mapamedieval01.png",
+            "/images/maps/MapaMedieval/mapamedieval02.png",
+            "/images/maps/MapaMedieval/mapamedieval03.png",
+            "/images/maps/MapaMedieval/mapamedieval04.png",
+            "/images/maps/MapaMedieval/mapamedieval05.png",
+            "/images/maps/MapaMedieval/mapamedieval06.png",
+            "/images/maps/MapaMedieval/mapamedieval07.png",
+            "/images/maps/MapaMedieval/mapamedieval08.png",
+            "/images/maps/MapaMedieval/mapamedieval09.png",
+            "/images/maps/MapaMedieval/mapamedieval10.png"
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
     },
     {
         "name": {
-            "en": "Frozen Depths"
+            "en": "StreetParking"
         },
-        "slug": "frozen-depths",
-        "image": "/images/maps/map5.png",
+        "slug": "street-parking-map",
+        "image": "/images/maps/StreetParking/StreetParkingThumbnail.png",
         "description": {
-            "en": "Explore icy caves and ruins."
+            "en": "Dream inside that amazing map making your best performances."
         },
         "longDescription": {
-            "en": "Delve into freezing caves, uncover lost civilizations, and experience the chill of the unknown in this atmospheric cold biome map."
+            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
         },
-        "youtube": null,
+        "youtube": "tSZ_ZY1_ewg",
         "slider": [
-        "/images/maps/map5/map5-1.png",
-        "/images/maps/map5/map5-2.png",
-        "/images/maps/map5/map5-3.png"
-        ],
-        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
-        "featured": true
-    },
-    {
-        "name": {
-            "en": "Inferno Citadel"
-        },
-        "slug": "inferno-citadel",
-        "image": "/images/maps/map6.png",
-        "description": {
-            "en": "Fiery fortress challenges."
-        },
-        "longDescription": {
-            "en": "Face flame guardians, solve fire puzzles, and conquer the burning throne of a forgotten citadel in this intense combat map."
-        },
-        "youtube": "YOUTUBE_ID_HERE",
-        "slider": [
-        "/images/maps/map6/map6-1.png",
-        "/images/maps/map6/map6-2.png",
-        "/images/maps/map6/map6-3.png"
+            "/images/maps/StreetParking/streetparking01.png",
+            "/images/maps/StreetParking/streetparking02.png",
+            "/images/maps/StreetParking/streetparking03.png",
+            "/images/maps/StreetParking/streetparking04.png",
+            "/images/maps/StreetParking/streetparking05.png",
+            "/images/maps/StreetParking/streetparking06.png",
+            "/images/maps/StreetParking/streetparking07.png",
+            "/images/maps/StreetParking/streetparking08.png",
+            "/images/maps/StreetParking/streetparking09.png",
+            "/images/maps/StreetParking/streetparking10.png"
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
