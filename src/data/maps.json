@@ -1,18 +1,22 @@
 [
     {
         "name": {
-            "en": "Willyrex Arena"
+            "en": "Willyrex Arena",
+            "es": "Arena Willyrex"
         },
         "slug": "willyrex-arena",
         "image": "/images/maps/ArenaWillyrex/ArenaWillyrexThumbnail.png",
         "description": {
-            "en": "Enter Willyrex Arena—a dynamic playground where every sword swing and sprint can crown a new champion."
+            "en": "Step into Willyrex Arena battlefield where every strike can forge a legend.",
+            "es": "Entra en la Arena Willyrex: un campo de batalla donde cada golpe puede forjar una leyenda."
         },
         "longDescription": {
-            "en": "Dare to cross the gates of Willyrex Arena, a venue that throbs with anticipation and shifts tempo with every contender.\nTiered stands rise in concentric rings, and each roar of the crowd booms across the ground, quickening the duelists’ pulse.\nAll entrances funnel into a central ring where distance collapses and every move demands absolute precision.\nThere are no distractions—only the floor beneath your feet, cutting air, and the spectators’ unblinking gaze.\nClashes flow one into another; each victory leaves a fleeting mark, as ephemeral as it is unforgettable.\nAs shadows lengthen, the atmosphere thickens and challenges emerge that test the steadiest nerves.\nLeaving the Arena is not retreating: it is carrying the certainty that you measured your worth before all."
+            "en": "Dare to cross the gates of Willyrex Arena, a stage that pulses with anticipation and transforms with every contender.\nTowering stands encircle the ground, amplifying the roar of the crowd and fueling the heartbeat of each duelist.\nEvery path converges at the central ring, where distance collapses and precision rules every move.\nThere are no distractions, only the dust beneath your feet, the clash of steel, and the relentless gaze of the spectators.\nEach battle flows into the next, victories etched briefly yet burning in memory.\nAs shadows stretch across the arena, new trials rise to test even the steadiest warriors.\nTo leave the Arena is not to retreat, it is to carry the proof that you measured your worth before all.",
+            "es": "Atrévete a cruzar las puertas de la Arena Willyrex, un escenario que late con expectación y se transforma con cada retador.\nGradas imponentes rodean el terreno, amplificando el rugido del público y acelerando el pulso de cada duelista.\nTodos los caminos desembocan en el anillo central, donde la distancia desaparece y la precisión dicta cada movimiento.\nNo hay distracciones: solo el polvo bajo tus pies, el choque del acero y la mirada implacable de los espectadores.\nCada combate fluye hacia el siguiente, victorias grabadas fugazmente pero ardientes en la memoria.\nCuando las sombras se alargan sobre la arena, emergen nuevos desafíos que ponen a prueba incluso a los guerreros más firmes.\nSalir de la Arena no es retirarse, es llevar contigo la certeza de haber medido tu valor ante todos."
         },
         "youtube": "YadYrBFubpg",
         "slider": [
+        "/images/maps/ArenaWillyrex/ArenaWillyrexThumbnail.png",
         "/images/maps/ArenaWillyrex/ArenaWillyrex01.png",
         "/images/maps/ArenaWillyrex/ArenaWillyrex02.png",
         "/images/maps/ArenaWillyrex/ArenaWillyrex03.png",
@@ -25,18 +29,22 @@
     },
     {
         "name": {
-            "en": "Battle Building Diminutos"
+            "en": "Build Battle",
+            "es": "Batalla de Construcción"
         },
-        "slug": "battle-building-diminutos",
+        "slug": "battle-build",
         "image": "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrexThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best buildings."
+            "en": "Enter Battle Building: where speed and creativity collide in epic build duels.",
+            "es": "Adéntrate en Battle Building: donde la velocidad y la creatividad chocan en duelos de construcción épicos."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Step into Battle Building, a competitive stage where imagination meets pressure and only the sharpest minds prevail.\nClaim your plot, gather your blocks, and let the countdown ignite your creativity. Each round unveils a theme that dares you to balance brilliance with precision, crafting under the relentless tick of the clock.\nHere, every wall raised and every detail placed carries weight—the difference between glory and defeat.\nFace rivals head-on or team up with allies, but remember: every build will be judged, every choice exposed.\nThis is not just construction, it is battle. Fast, fair, and unforgettable. Prove that you are the true master builder.",
+            "es": "Entra en Battle Building Diminutos, un escenario competitivo donde la imaginación se enfrenta a la presión y solo las mentes más agudas prevalecen.\nReclama tu parcela, reúne tus bloques y deja que la cuenta atrás encienda tu creatividad. Cada ronda revela un tema que te reta a equilibrar genialidad y precisión, construyendo bajo el implacable tic-tac del reloj.\nAquí, cada muro levantado y cada detalle colocado marcan la diferencia entre la gloria y la derrota.\nEnfréntate cara a cara con tus rivales o forma equipo con aliados, pero recuerda: cada construcción será juzgada, cada decisión expuesta.\nEsto no es solo construir, es luchar. Rápido, justo e inolvidable. Demuestra que eres el verdadero maestro constructor."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
+            "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrexThumbnail.png",
             "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex01.png",
             "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex02.png",
             "/images/maps/BattleBuildingWillyrex/BattleBuildingWillyrex03.png",
@@ -51,18 +59,22 @@
     },
     {
         "name": {
-            "en": "Circus"
+            "en": "Rex Circus",
+            "es": "Circo Rex"
         },
-        "slug": "circus-map",
+        "slug": "circo-rex",
         "image": "/images/maps/Circo/CircoThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best performances."
+            "en": "Welcome to Rex Circus: a magical arena where imagination takes center stage.",
+            "es": "Bienvenido a Circo Rex: una arena mágica donde la imaginación ocupa el centro del escenario."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Step into Rex Circus, a dazzling world where creativity becomes performance and every block builds the show of a lifetime.\nTowering tents, flashing lights, and endless color set the scene for acts of pure imagination. Here, you are not just building, you are performing.\nLet your ideas soar under the big top, crafting spectacles that surprise, amaze, and captivate. Each creation is a showpiece, judged not only for its precision but for the wonder it inspires.\nRex Circus is more than a map: it is a stage where fantasy takes flight, limits disappear, and only the boldest visions earn the spotlight.\nDare to amaze. Dare to perform. Dare to own the Circus.",
+            "es": "Adéntrate en Circo Rex, un mundo deslumbrante donde la creatividad se convierte en espectáculo y cada bloque construye el show de tu vida.\nCarpas gigantes, luces brillantes y un estallido de colores crean el escenario para actos de pura imaginación. Aquí no solo construyes, aquí actúas.\nDeja volar tus ideas bajo la gran carpa, creando espectáculos que sorprenden, maravillan y cautivan. Cada construcción es una obra, juzgada no solo por su precisión, sino por la magia que transmite.\nCirco Rex es más que un mapa: es un escenario donde la fantasía cobra vida, los límites desaparecen y solo las visiones más atrevidas merecen el foco.\nAtrévete a sorprender. Atrévete a actuar. Atrévete a dominar el Circo."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
+            "/images/maps/Circo/CircoThumbnail.png",
             "/images/maps/Circo/circo01.png",
             "/images/maps/Circo/circo02.png",
             "/images/maps/Circo/circo03.png",
@@ -77,15 +89,18 @@
     },
     {
         "name": {
-            "en": "West Town"
+            "en": "Wild West",
+            "es": "Salvaje Oeste"
         },
         "slug": "west-town-map",
         "image": "/images/maps/WestTown/WestTownThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best performances."
+            "en": "Ride into the Wild West: a dusty frontier where duels and legends are born.",
+            "es": "Adéntrate en el Salvaje Oeste: una frontera polvorienta donde nacen duelos y leyendas."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Step into the Wild West, a rugged town of wooden saloons, dusty roads, and untamed horizons.\nEvery street carries the tension of a duel, every shadow hints at hidden danger, and every corner holds a chance for glory.\nExplore the sheriff’s office, the bustling saloon, and the outskirts where only the boldest dare to wander.\nHere, survival is measured in reflexes and courage, and reputation is the only currency that lasts.\nThe Wild West is more than a map—it is a frontier of grit and legend, where only the fastest draw and the bravest hearts prevail.",
+            "es": "Adéntrate en el Salvaje Oeste, un pueblo rudo de salones de madera, caminos polvorientos y horizontes indomables.\nCada calle lleva la tensión de un duelo, cada sombra insinúa un peligro oculto y cada rincón guarda una oportunidad de gloria.\nExplora la oficina del sheriff, el bullicioso salón y las afueras donde solo los más audaces se atreven a internarse.\nAquí, la supervivencia se mide en reflejos y coraje, y la reputación es la única moneda que perdura.\nEl Salvaje Oeste es más que un mapa: es una frontera de dureza y leyenda, donde solo el desenfunde más rápido y los corazones más valientes prevalecen."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
@@ -104,15 +119,18 @@
     },
     {
         "name": {
-            "en": "Pirate Lighthouse"
+            "en": "Pirate Lighthouse",
+            "es": "Faro Pirata"
         },
         "slug": "pirate-lighthouse-map",
         "image": "/images/maps/FaroPirata/FaroPirataThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best performances."
+            "en": "Enter the Pirate Lighthouse: a beacon of mystery where adventure never sleeps.",
+            "es": "Adéntrate en el Faro Pirata: un faro de misterio donde la aventura nunca descansa."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Sail into the Pirate Lighthouse, a towering sentinel that rises above crashing waves and whispers of hidden treasure.\nIts stone walls guard countless secrets, while winding stairs and perilous paths challenge every step you take.\nExplore dimly lit chambers, scale dizzying heights, and uncover the echoes of long-lost crews who sought glory before you.\nEvery corner holds a choice: push forward into danger or retreat into safety, knowing the bravest always claim the greatest rewards.\nMore than a map, the Pirate Lighthouse is an odyssey—an unending call to explorers, dreamers, and adventurers ready to carve their legend into the storm.",
+            "es": "Navega hacia el Faro Pirata, un centinela imponente que se alza sobre olas rugientes y susurros de tesoros ocultos.\nSus muros de piedra guardan incontables secretos, mientras escaleras en espiral y senderos peligrosos ponen a prueba cada paso que das.\nExplora cámaras sombrías, asciende a alturas vertiginosas y descubre los ecos de tripulaciones perdidas que buscaron la gloria antes que tú.\nCada rincón plantea una elección: avanzar hacia el peligro o retroceder hacia la seguridad, sabiendo que los más valientes siempre se llevan las mayores recompensas.\nMás que un mapa, el Faro Pirata es una odisea: un llamado eterno a exploradores, soñadores y aventureros dispuestos a grabar su leyenda en medio de la tormenta."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
@@ -133,15 +151,18 @@
     },
     {
         "name": {
-            "en": "Japanese Temple"
+            "en": "Japanese Temple",
+            "es": "Templo Japonés"
         },
         "slug": "japanese-temple-map",
         "image": "/images/maps/MapaJapones/MapaJaponesThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best performances."
+            "en": "Explore the Japanese Temple: a sacred place where serenity meets hidden challenges.",
+            "es": "Explora el Templo Japonés: un lugar sagrado donde la serenidad se encuentra con desafíos ocultos."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Enter the Japanese Temple, an ancient sanctuary where every path breathes tradition and every shadow hides a secret.\nCross bridges framed by cherry blossoms, ascend stone steps worn by time, and let the calm of the gardens conceal the trials that await within.\nThe architecture whispers of forgotten dynasties, while lanterns guide your way through courtyards and halls filled with mystery.\nBalance serenity with vigilance: here, beauty can be a disguise and silence a challenge.\nThe Japanese Temple is more than a map—it is a journey into harmony, mystery, and mastery, rewarding only those who respect both its peace and its peril.",
+            "es": "Adéntrate en el Templo Japonés, un santuario ancestral donde cada sendero respira tradición y cada sombra oculta un secreto.\nCruza puentes enmarcados por cerezos en flor, asciende por escalones de piedra desgastados por el tiempo y deja que la calma de los jardines esconda las pruebas que aguardan en su interior.\nLa arquitectura susurra sobre dinastías olvidadas, mientras los faroles guían tu camino por patios y salones llenos de misterio.\nEquilibra serenidad y vigilancia: aquí la belleza puede ser un disfraz y el silencio un desafío.\nEl Templo Japonés es más que un mapa: es un viaje hacia la armonía, el misterio y la maestría, que recompensa solo a quienes respetan tanto su paz como su peligro."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
@@ -162,18 +183,22 @@
     },
     {
         "name": {
-            "en": "Oasis Mill"
+            "en": "Oasis Mill",
+            "es": "Molino del Oasis"
         },
         "slug": "oasis-mill-map",
         "image": "/images/maps/Oasis/OasisThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best performances."
+            "en": "Discover Oasis Mill: a hidden refuge where life and adventure bloom in the desert.",
+            "es": "Descubre el Molino del Oasis: un refugio oculto donde la vida y la aventura florecen en el desierto."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Journey to Oasis Mill, a sanctuary rising from the sands where water turns the desert into life and stone into legend.\nIts towering windmill stands as a beacon amid golden dunes, while fertile grounds and hidden paths invite both wonder and challenge.\nExplore shimmering waters, cross wooden bridges, and uncover secrets woven into its walls.\nBut beware: beauty here is fragile, and every shadow may conceal trials that test your courage.\nOasis Mill is not just a haven—it is an adventure carved between silence and storm, awaiting those who dare to step into its embrace.",
+            "es": "Viaja hasta el Molino del Oasis, un santuario que emerge de las arenas donde el agua convierte el desierto en vida y la piedra en leyenda.\nSu imponente molino se alza como un faro entre dunas doradas, mientras los terrenos fértiles y senderos ocultos invitan tanto al asombro como al desafío.\nExplora aguas resplandecientes, cruza puentes de madera y descubre secretos grabados en sus muros.\nPero cuidado: la belleza aquí es frágil y cada sombra puede ocultar pruebas que pondrán a prueba tu valor.\nEl Molino del Oasis no es solo un refugio, es una aventura esculpida entre el silencio y la tormenta, esperando a quienes se atrevan a adentrarse en su abrazo."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
+            "/images/maps/Oasis/OasisThumbnail.png",
             "/images/maps/Oasis/oasis01.png",
             "/images/maps/Oasis/oasis02.png",
             "/images/maps/Oasis/oasis03.png",
@@ -191,15 +216,18 @@
     },
     {
         "name": {
-            "en": "Circuito Willyrex"
+            "en": "CopaRex",
+            "es": "CopaRex"
         },
-        "slug": "circuito-willyrex-map",
+        "slug": "coparex-map",
         "image": "/images/maps/CircuitoWillyrex/CircuitoWillyrexThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best performances."
+            "en": "Race into CopaRex: a high-speed circuit where every turn can crown a champion.",
+            "es": "Corre en CopaRex: un circuito vertiginoso donde cada curva puede coronar a un campeón."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Welcome to CopaRex, the ultimate racing challenge where speed, skill, and nerve decide the victor.\nEngines roar as the track unfolds with sharp bends, daring straights, and obstacles designed to push you beyond your limits.\nEvery corner is a test of reflexes, every sprint an opportunity to seize the lead. Precision and courage are your allies; hesitation is your downfall.\nCompete head-to-head or against the clock, but know this: only the boldest drivers will master the circuit and lift the crown of CopaRex.\nDo you have what it takes to own the track?",
+            "es": "Bienvenido a CopaRex, el desafío definitivo de velocidad donde la destreza y el valor deciden al vencedor.\nLos motores rugen mientras el circuito se despliega con curvas cerradas, rectas desafiantes y obstáculos diseñados para llevarte al límite.\nCada curva es una prueba de reflejos, cada recta una oportunidad para tomar la delantera. La precisión y el coraje son tus aliados; la duda, tu condena.\nCompite cara a cara o contra el cronómetro, pero tenlo claro: solo los pilotos más atrevidos dominarán el circuito y alzarán la corona de CopaRex.\n¿Tienes lo necesario para adueñarte de la pista?"
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
@@ -223,28 +251,31 @@
     },
     {
         "name": {
-            "en": "Willyrex Parkour"
+            "en": "Willyrex Parkour",
+            "es": "Willyrex Parkour"
         },
         "slug": "willyrex-parkour",
         "image": "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrexThumbnail.png",
         "description": {
-            "en": "Climb Willyrex’s Parkour Tower and prove, jump by jump, your true skill."
+            "en": "Climb the Willyrex Parkour Tower and prove, jump by jump, your true skill.",
+            "es": "Asciende en la Torre de Willyrex Parkour y demuestra, salto a salto, tu verdadera habilidad."
         },
         "longDescription": {
-            "en":   "Before you rises a tower that seems to stretch endlessly upward, distilling both the pressure and the reward of parkour.\nIts design plays with pure verticality: every block dares you to risk, every brief pause seeds doubt.\nThere are no distractions—just open air around you and the certainty that one misstep sends you back to the start.\nSections shift pace without warning, forcing you to recalibrate reflexes and timing on the fly.\nDifficulty grows subtly yet relentlessly, turning the climb into a battle against your own patience.\nFans of Willyrex will sense echoes of his competitive spirit, though the map never reveals all its secrets.\nThose who reach the summit claim a victory that speaks more about the player than about the game."
+            "en": "Before you rises the Willyrex Parkour Tower, a structure that seems to stretch endlessly into the sky, distilling both the pressure and the reward of pure parkour.\nIts vertical design dares you with every block: each leap a risk, each hesitation a seed of doubt.\nThere are no distractions—only open air, dizzying heights, and the certainty that a single mistake sends you back to the start.\nThe pace shifts unexpectedly, forcing you to recalibrate reflexes and timing in real time.\nDifficulty escalates with precision, transforming the climb into a test not only of skill but of patience and resolve.\nThose who endure and reach the summit do more than conquer a map—they prove they can master themselves.",
+            "es": "Ante ti se alza la Torre de Willyrex Parkour, una estructura que parece extenderse sin fin hacia el cielo, destilando tanto la presión como la recompensa del parkour más puro.\nSu diseño vertical te reta en cada bloque: cada salto es un riesgo, cada duda una trampa.\nNo hay distracciones: solo el aire abierto, la altura vertiginosa y la certeza de que un solo error te devuelve al inicio.\nEl ritmo cambia sin previo aviso, obligándote a recalibrar reflejos y sincronización sobre la marcha.\nLa dificultad aumenta con precisión, transformando el ascenso en una prueba no solo de destreza, sino de paciencia y determinación.\nQuienes resisten y alcanzan la cima no solo conquistan un mapa: demuestran que pueden dominarse a sí mismos."
         },
         "youtube": "dQw4w9WgXcQ",
         "slider": [
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrexThumbnail.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex01.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex02.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex03.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex04.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex05.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex06.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex07.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex08.png",
-        "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex09.png"
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrexThumbnail.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex01.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex02.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex03.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex04.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex05.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex06.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex07.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex08.png",
+            "/images/maps/ParkourTowerWillyrex/ParkourTowerWillyrex09.png"
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
@@ -276,18 +307,22 @@
     },
     {
         "name": {
-            "en": "Medieval Castle"
+            "en": "Medieval Castle",
+            "es": "Castillo Medieval"
         },
         "slug": "medieval-map",
         "image": "/images/maps/MapaMedieval/MapaMedievalThumbnail.png",
         "description": {
-            "en": "Dream inside that amazing map making your best performances."
+            "en": "Enter the Medieval Castle: a fortress of stone where legends are forged.",
+            "es": "Adéntrate en el Castillo Medieval: una fortaleza de piedra donde se forjan las leyendas."
         },
         "longDescription": {
-            "en": "Step into a competitive building arena where creativity and speed decide the winner. Claim a plot, gather your materials, and construct your vision before the timer hits zero. Each round presents a simple theme that pushes you to balance ingenuity with efficiency, rewarding sharp thinking and clean execution. Whether battling alone or teaming up with friends, this map delivers a fair, structured stage for head-to-head build-offs and friendly rivalries. Build fast, judge fairly, and prove you deserve the title of master builder."
+            "en": "Step into the Medieval Castle, a bastion of towering walls, hidden chambers, and echoes of forgotten battles.\nCross bridges above deep moats, wander through majestic halls, and ascend watchtowers that pierce the sky.\nEvery corridor tells a story of kings and warriors, every courtyard hides trials that test your courage and resolve.\nWithin its stone embrace, honor and danger walk hand in hand: a place where alliances are forged, rivalries ignite, and only the boldest claim the crown.\nThe Medieval Castle is more than a map—it is a timeless arena where glory awaits those brave enough to seize it.",
+            "es": "Adéntrate en el Castillo Medieval, un bastión de murallas imponentes, cámaras ocultas y ecos de batallas olvidadas.\nCruza puentes sobre profundos fosos, recorre salones majestuosos y asciende a torres de vigilancia que rozan el cielo.\nCada pasillo cuenta la historia de reyes y guerreros, cada patio oculta pruebas que ponen a prueba tu valor y determinación.\nDentro de sus muros de piedra, el honor y el peligro caminan juntos: un lugar donde se forjan alianzas, nacen rivalidades y solo los más audaces reclaman la corona.\nEl Castillo Medieval es más que un mapa: es una arena atemporal donde la gloria aguarda a quienes sean lo bastante valientes para conquistarla."
         },
         "youtube": "tSZ_ZY1_ewg",
         "slider": [
+            "/images/maps/MapaMedieval/MapaMedievalThumbnail.png",
             "/images/maps/MapaMedieval/mapamedieval01.png",
             "/images/maps/MapaMedieval/mapamedieval02.png",
             "/images/maps/MapaMedieval/mapamedieval03.png",
@@ -329,5 +364,33 @@
         ],
         "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
         "featured": true
+    },
+    {
+        "name": {
+            "en": "Water Race",
+            "es": "Carrera Acuática"
+        },
+        "slug": "water-race-map",
+        "image": "/images/maps/WaterRace/WaterRaceThumbnail.png",
+        "description": {
+            "en": "Dive into Water Race: a fast-paced aquatic challenge where only the swiftest survive.",
+            "es": "Sumérgete en Carrera Acuática: un desafío trepidante donde solo los más rápidos sobreviven."
+        },
+        "longDescription": {
+            "en": "Welcome to Water Race, a thrilling competition where speed, agility, and endurance collide in aquatic mayhem.\nSprint across floating platforms, dive into streams that drag you off course, and leap over obstacles designed to test your reflexes.\nThe water is both ally and enemy—guiding you forward yet ready to sweep you away with a single mistake.\nEvery lap tightens the tension, every splash can change the leader, and every victory is earned stroke by stroke.\nWater Race is more than a map—it is a liquid battlefield where only the fastest and most fearless claim the crown.",
+            "es": "Bienvenido a Carrera Acuática, una competición vibrante donde velocidad, agilidad y resistencia chocan en un caos acuático.\nCorre sobre plataformas flotantes, lánzate a corrientes que intentan sacarte del recorrido y salta obstáculos diseñados para poner a prueba tus reflejos.\nEl agua es a la vez aliada y enemiga: te impulsa hacia delante pero también puede arrastrarte con un solo error.\nCada vuelta aumenta la tensión, cada chapuzón puede cambiar al líder y cada victoria se gana brazada a brazada.\nCarrera Acuática es más que un mapa: es un campo de batalla líquido donde solo los más rápidos y valientes se llevan la corona."
+        },
+        "youtube": "tSZ_ZY1_ewg",
+        "slider": [
+            "/images/maps/WaterRace/WaterRaceThumbnail.png",
+            "/images/maps/WaterRace/waterrace01.png",
+            "/images/maps/WaterRace/waterrace02.png",
+            "/images/maps/WaterRace/waterrace03.png",
+            "/images/maps/WaterRace/waterrace04.png",
+            "/images/maps/WaterRace/waterrace05.png"
+        ],
+        "marketplace_url": "https://www.minecraft.net/es-es/marketplace",
+        "featured": true
     }
+
 ]

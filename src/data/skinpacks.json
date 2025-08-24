@@ -22,49 +22,49 @@
                     "en": "Summer Alexby",
                     "es": "Alexby de Verano"
                 },
-                "image": "/previews/AlexbyKarmaSummer.png"
+                "image": "/images/skinpacks/SummerPack/AlexbyKarmaSummer.png"
             },
             {
                 "name": { 
                     "en": "Summer Fargan", 
                     "es": "Fargan de Verano" 
                 },
-                "image": "/previews/FarganKarmaSummer.png"
+                "image": "/images/skinpacks/SummerPack/FarganKarmaSummer.png"
             },
             {
                 "name": {
                     "en": "Summer Lolito",
                     "es": "Lolito de Verano"
                 },
-                "image": "/previews/LolitoKarmaSummer.png"
+                "image": "/images/skinpacks/SummerPack/LolitoKarmaSummer.png"
             },
             {
                 "name": { 
                     "en": "Summer Rubius", 
                     "es": "Rubius de Verano" 
                 },
-                "image": "/previews/RubiusKarmaSummer.png"
+                "image": "/images/skinpacks/SummerPack/RubiusKarmaSummer.png"
             },
             {
                 "name": { 
                     "en": "Summer Staxx", 
                     "es": "Staxx de Verano" 
                 },
-                "image": "/previews/StaxxKarmaSummer.png"
+                "image": "/images/skinpacks/SummerPack/StaxxKarmaSummer.png"
             },
             {
                 "name": { 
                     "en": "Summer Vegetta", 
                     "es": "Vegetta de Verano" 
                 },
-                "image": "/previews/VegettaKarmaSummer.png"
+                "image": "/images/skinpacks/SummerPack/VegettaKarmaSummer.png"
             },
             {
                 "name": { 
                     "en": "Summer Willyrex", 
                     "es": "Willrex de Verano" 
                 },
-                "image": "/previews/WillyrexKarmaSummer.png"
+                "image": "/images/skinpacks/SummerPack/WillyrexKarmaSummer.png"
             }
         ],
         "featured" : true
@@ -92,14 +92,14 @@
                     "en": "Cartoon Vegetta",
                     "es": "Vegetta dibujo animado"
                 },
-                "image": "/previews/SkinVegettaCartoon.png"
+                "image": "/images/skinpacks/CartoonPack/CartoonPackVegetta.png"
             },
             {
                 "name": { 
                     "en": "Cartoon Willyrex", 
                     "es": "Willyrex dibujo animado" 
                 },
-                "image": "/previews/SkinWillyrexCartoon.png"
+                "image": "/images/skinpacks/CartoonPack/CartoonPackWilly.png"
             }
         ],
         "featured" : true
